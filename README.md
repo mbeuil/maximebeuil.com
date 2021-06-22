@@ -1,4 +1,32 @@
 # maximebeuil.com
+
+Hey folks !
+
+Welcome to my open sourced personal blog. Feel free to look around what I did and how I did it. 
+
+This is a project build with :
+- [x] React v17
+- [x] Next v11
+- [x] Typescript
+- [x] React-Intl
+- [ ] Tailwind
+
+Core app made of 3 pages :
+- [ ] Homepage
+- [ ] Blogpage
+- [ ] Blog/Articlepage
+
+Features :
+- [x] Internationalization
+- [ ] Darkmode
+- [ ] Kent C.Dodds MDX-Bundler
+
+Others :
+- [x] commit festures commitizen + pre-commit script commitlint & husky
+- [ ] Design with jest (half way through)
+
+----
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
