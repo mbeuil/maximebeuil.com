@@ -9,7 +9,7 @@ This is a project build with :
 - [x] Next v11
 - [x] Typescript
 - [x] React-Intl
-- [ ] Tailwind
+- [x] Tailwind
 
 Core app made of 3 pages :
 - [ ] Homepage

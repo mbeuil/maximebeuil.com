@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { IntlProvider } from 'react-intl';
-import '../styles/globals.css';
+import '@/styles/index.css';
 
 import type { AppProps } from 'next/app';
 
