@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center text-blue">
       <FormattedMessage
         id="introduction_page.title"
         description="Title message for introduction page"
