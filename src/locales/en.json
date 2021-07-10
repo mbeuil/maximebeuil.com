@@ -3,6 +3,7 @@
     "title": "Hello world!"
   },
   "nav": {
-    "language": "Change language"
+    "language": "Button to choose a language",
+    "theme": "Button to choose a theme"
   }
 }

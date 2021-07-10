@@ -3,6 +3,7 @@
     "title": "Bonjour tout le monde!"
   },
   "nav": {
-    "language": "Changer de langue"
+    "language": "Bouton pour choisir une langue",
+    "theme": "Bouton pour choisir une theme"
   }
 }
