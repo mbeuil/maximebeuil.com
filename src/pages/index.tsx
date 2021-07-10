@@ -1,3 +1,4 @@
+import * as React from 'react';
 import type { GetStaticProps } from 'next';
 import { useI18n } from 'next-localization';
 
@@ -11,7 +12,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   };
 };
 
-export default function Home() {
+export const Home: React.FC = () => {
   const i18n = useI18n();
 
   return (
@@ -20,4 +21,6 @@ export default function Home() {
       <p className="text-primary self-center">{i18n.t('introduction.title')}</p>
     </div>
   );
-}
+};
+
+export default Home;

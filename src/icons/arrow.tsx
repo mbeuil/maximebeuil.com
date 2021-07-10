@@ -1,4 +1,4 @@
-export function Arrow({ className }: { className?: string }) {
+export const Arrow: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       width="100%"
@@ -21,4 +21,4 @@ export function Arrow({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};

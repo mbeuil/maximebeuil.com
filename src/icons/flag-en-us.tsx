@@ -1,4 +1,4 @@
-export function FlagEnUs({ className }: { className?: string }) {
+export const FlagEnUs: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       id="flag-en-us_svg__Layer_1"
@@ -62,4 +62,4 @@ export function FlagEnUs({ className }: { className?: string }) {
       </g>
     </svg>
   );
-}
+};

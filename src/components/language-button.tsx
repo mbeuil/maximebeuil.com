@@ -1,5 +1,5 @@
+import * as React from 'react';
 import NextLink from 'next/link';
-import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useI18n } from 'next-localization';
 
@@ -7,10 +7,10 @@ import { useClickAwayListener } from '@/hooks';
 import { Arrow, Flags } from '@/icons';
 import { Language } from '@/models';
 
-function LanguageButton() {
+const LanguageButton: React.FC = () => {
   const { locale, asPath } = useRouter();
   const i18n = useI18n();
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = React.useState(false);
   const languageButtonRef = useClickAwayListener<HTMLDivElement>(() =>
     setVisible(false),
   );
@@ -39,19 +39,19 @@ function LanguageButton() {
         />
       </button>
       {visible && (
-        <div className="bg-secondary absolute py-2 rounded top-12 right-0">
+        <div className="bg-secondary absolute py-2 rounded top-12 right-0 w-36">
           <NextLink href={to} locale={otherLanguage} passHref>
-            <a className="hover:bg-tertiary flex flex-row h-8 px-4 items-center gap-3">
+            <button className="hover:bg-tertiary flex flex-row h-8 px-4 items-center gap-3 w-full">
               <Flags language={otherLanguage} className="w-7 h-7" />
               <span className="text-secondary text-lg">
                 {locale === Language.FR ? 'english' : 'français'}
               </span>
-            </a>
+            </button>
           </NextLink>
         </div>
       )}
     </div>
   );
-}
+};
 
 export default LanguageButton;

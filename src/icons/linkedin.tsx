@@ -1,4 +1,4 @@
-export function Linkedin({ className }: { className?: string }) {
+export const Linkedin: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ export function Linkedin({ className }: { className?: string }) {
       <circle cx="4" cy="4" r="2" />
     </svg>
   );
-}
+};

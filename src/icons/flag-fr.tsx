@@ -1,4 +1,4 @@
-export function FlagFr({ className }: { className?: string }) {
+export const FlagFr: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +18,4 @@ export function FlagFr({ className }: { className?: string }) {
       />
     </svg>
   );
-}
+};
