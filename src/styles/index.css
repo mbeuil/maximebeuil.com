@@ -5,7 +5,9 @@
 :root {
   --color-bg-primary: #0d1219;
   --color-bg-secondary: #1a2634;
-  --color-bg-tertiary: #a7adb2;
+  --color-bg-secondary: #1a2634;
+  --color-bg-tertiary: #2e3a48;
+  --color-bg-quaternary: #a7adb2;
   --button-primary-bg: #7b78ff;
   --button-primary-bg-hover: #5855f3;
   --color-base: #f9fafa;
@@ -21,3 +23,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.btn {
+  @apply text-blue border rounded border-blue py-5 px-7 text-sm;
+}
+
+.btn-blog {
+  @apply sm:text-lg font-medium px-4 py-1 rounded bg-button hover:bg-hover;
+}
+
+.hover-rotate {
+  @apply transition transform duration-200 rotate-180;
+}

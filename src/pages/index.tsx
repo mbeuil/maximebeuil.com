@@ -1,24 +1,20 @@
-import { FormattedMessage } from 'react-intl';
 import type { GetStaticProps } from 'next';
+import { useI18n } from 'next-localization';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const language = await import(`../lang/${locale}.json`);
+  const { default: lngDict = {} } = await import(`../locales/${locale}.json`);
 
   return {
-    props: {
-      messages: language.default,
-    },
+    props: { lngDict },
   };
 };
 
 export default function Home() {
+  const i18n = useI18n();
+
   return (
-    <div className="flex min-h-screen items-center justify-center text-blue">
-      <FormattedMessage
-        id="introduction_page.title"
-        description="Title message for introduction page"
-        defaultMessage="Hello world!"
-      />
+    <div className="flex min-h-screen justify-center">
+      <p className="text-primary self-center">{i18n.t('introduction.title')}</p>
     </div>
   );
 }
