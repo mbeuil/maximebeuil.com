@@ -18,7 +18,9 @@ export const Home: React.FC = () => {
   return (
     <div className="flex min-h-screen justify-center">
       <NavBar />
-      <p className="text-primary self-center">{i18n.t('introduction.title')}</p>
+      <p className="text-primary-1 self-center">
+        {i18n.t('introduction.title')}
+      </p>
     </div>
   );
 };

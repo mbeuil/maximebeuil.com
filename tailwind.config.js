@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   purge: ['./src/**/*.{jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       backgroundColor: {
@@ -14,11 +14,15 @@ module.exports = {
         hover: 'var(--button-primary-bg-hover)',
       },
       textColor: {
-        primary: 'var(--color-base)',
+        primary: {
+          1: 'var(--color-base-1)',
+          2: 'var(--color-base-2)',
+        },
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
         blue: 'var(--button-primary-bg)',
         link: 'var(--color-link)',
+        background: 'var(--color-bg-primary)',
       },
       borderColor: {
         blue: 'var(--button-primary-bg)',
@@ -43,7 +47,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function ({ addUtilities, addComponents, e, prefix, config }) {
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.horizontal-tb': {
           writingMode: 'tb',
