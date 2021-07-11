@@ -3,9 +3,11 @@
     "title": "Hello world!"
   },
   "nav": {
-    "language": "Button to choose a language",
-    "logo": "Button to go back to home page",
-    "theme": "Button to choose a theme"
+    "language_goto":"français",
+    "language_list":"Language option list",
+    "language_selected": "Language button",
+    "logo": "Home page",
+    "theme": "Theme button"
   },
   "footer":{
     "socials_link": "Link to",

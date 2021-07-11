@@ -24,8 +24,10 @@ const LanguageButton: React.FC = () => {
   return (
     <div ref={languageButtonRef} className="relative">
       <button
-        aria-label={i18n.t('nav.language')}
-        title={i18n.t('nav.language')}
+        aria-haspopup="listbox"
+        aria-expanded={visible}
+        aria-label={i18n.t('nav.language_selected')}
+        title={i18n.t('nav.language_selected')}
         className="px-4 py-1 rounded relative hover:bg-secondary flex flex-row items-center gap-3"
         onClick={handleClick}>
         <Flags
@@ -39,16 +41,26 @@ const LanguageButton: React.FC = () => {
         />
       </button>
       {visible && (
-        <div className="bg-secondary absolute py-2 rounded top-12 right-0 w-36">
-          <NextLink href={to} locale={otherLanguage} passHref>
-            <button className="hover:bg-tertiary flex flex-row h-8 px-4 items-center gap-3 w-full">
-              <Flags language={otherLanguage} className="w-7 h-7" />
-              <span className="text-secondary text-lg">
-                {locale === Language.FR ? 'english' : 'français'}
-              </span>
-            </button>
-          </NextLink>
-        </div>
+        <ul
+          id="exp_elem_list"
+          tabIndex={-1}
+          role="listbox"
+          aria-label={i18n.t('nav.language_list')}
+          className="bg-secondary absolute py-2 rounded top-12 right-0 w-36">
+          <li aria-selected role="option">
+            <NextLink href={to} locale={otherLanguage} passHref>
+              <button
+                aria-label={i18n.t('nav.language_goto')}
+                title={i18n.t('nav.language_goto')}
+                className="hover:bg-tertiary flex flex-row h-8 px-4 items-center gap-3 w-full">
+                <Flags language={otherLanguage} className="w-7 h-7" />
+                <span className="text-secondary text-lg">
+                  {locale === Language.FR ? 'english' : 'français'}
+                </span>
+              </button>
+            </NextLink>
+          </li>
+        </ul>
       )}
     </div>
   );

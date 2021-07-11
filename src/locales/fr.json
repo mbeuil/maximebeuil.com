@@ -3,9 +3,11 @@
     "title": "Bonjour tout le monde!"
   },
   "nav": {
-    "language": "Bouton pour choisir une langue",
-    "logo": "Bouton pour aller vers la page d'accueil",
-    "theme": "Bouton pour choisir une theme"
+    "language_goto":"english",
+    "language_list":"Liste des langues",
+    "language_selected": "Choix de la langue",
+    "logo": "Accueil",
+    "theme": "Choix du theme"
   },
   "footer":{
     "socials_link": "Lien vers",

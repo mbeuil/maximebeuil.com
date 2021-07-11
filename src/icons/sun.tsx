@@ -6,7 +6,7 @@ export const Sun: React.FC<{ className?: string }> = ({ className }) => {
       fill="currentColor"
       stroke="currentColor"
       className={className}>
-      <title>moon</title>
+      <title>Sun icon</title>
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
