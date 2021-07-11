@@ -4,6 +4,7 @@
   },
   "nav": {
     "language": "Bouton pour choisir une langue",
+    "logo": "Bouton pour aller vers la page d'accueil",
     "theme": "Bouton pour choisir une theme"
   },
   "footer":{
