@@ -8,28 +8,32 @@
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #d2d6db;
     --color-bg-quaternary: #a7adb2;
-    --button-primary-bg: #456fdf;
-    --button-primary-bg-hover: #323ebe;
+    --button-primary: #17a1f6;
+    --button-secondary: #456fdf;  
+    --button-tertiary: #323ebe;
     --color-base-1: #08090a;
     --color-base-2: #363d44;
     --color-primary: #202428;
     --color-secondary: #64707d;
     --color-tertiary: #64707d;
-    --color-link: #17a1f6;
+    --border-primary: #08090a0d;
+    --border-secondary: #08090a1a;
   }
   .dark {
     --color-bg-primary: #0d1219;
     --color-bg-secondary: #1a2634;
     --color-bg-tertiary: #2e3a48;
     --color-bg-quaternary: #a7adb2;
-    --button-primary-bg: #7b78ff;
-    --button-primary-bg-hover: #5855f3;
+    --button-primary: #7b78ff;
+    --button-secondary: #5855f3;
+    --button-tertiary: #17a1f6;
     --color-base-1: #f9fafa;
     --color-base-2: #c2c6ca;
     --color-primary: #dde0e2;
     --color-secondary: #a7adb2;
     --color-tertiary: #747c85;
-    --color-link: #17a1f6;
+    --border-primary: #ffffff1a;
+    --border-secondary: #ffffff26;
   }
 }
 
@@ -39,35 +43,39 @@
     --color-bg-secondary: #1a2634;
     --color-bg-tertiary: #08090a0d;
     --color-bg-quaternary: #a7adb2;
-    --button-primary-bg: #7b78ff;
-    --button-primary-bg-hover: #5855f3;
+    --button-primary: #7b78ff;
+    --button-secondary: #5855f3;
+    --button-tertiary: #17a1f6;
     --color-base-1: #f9fafa;
     --color-base-2: #c2c6ca;
     --color-primary: #dde0e2;
     --color-secondary: #a7adb2;
     --color-tertiary: #747c85;
-    --color-link: #17a1f6;
+    --border-primary: #ffffff1a;
+    --border-secondary: #ffffff26;
   }
   .light {
     --color-bg-primary: #fff;
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #08090a0d;
     --color-bg-quaternary: #a7adb2; 
-    --button-primary-bg: #456fdf;
-    --button-primary-bg-hover: #323ebe;
+    --button-primary: #17a1f6;
+    --button-secondary: #456fdf;  
+    --button-tertiary: #323ebe;
     --color-base-1: #08090a;
     --color-base-2: #363d44;
     --color-primary: #202428;
     --color-secondary: #64707d; 
     --color-tertiary: #64707d; 
-    --color-link: #17a1f6; 
+    --border-primary: #08090a0d;
+    --border-secondary: #08090a1a;
   }
 }
 
 html,
 
 body {
-  @apply bg-primary;
+  @apply bg-primary ;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -80,6 +88,10 @@ body {
   @apply sm:text-lg text-background font-medium px-4 py-1 rounded bg-button hover:bg-hover;
 }
 
-.hover-rotate {
-  @apply transition transform duration-200 rotate-180;
+.hover-link {
+  @apply transition transform duration-200 hover:-translate-y-1 hover:text-blue;
+}
+
+.svg-link {
+  @apply stroke-current text-secondary w-5 h-5 m-auto;
 }

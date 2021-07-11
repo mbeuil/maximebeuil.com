@@ -3,6 +3,7 @@ import type { GetStaticProps } from 'next';
 import { useI18n } from 'next-localization';
 
 import NavBar from '@/components/nav-bar';
+import Footer from '@/components/footer';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const { default: lngDict = {} } = await import(`../locales/${locale}.json`);
@@ -16,11 +17,10 @@ export const Home: React.FC = () => {
   const i18n = useI18n();
 
   return (
-    <div className="flex min-h-screen justify-center">
+    <div className="flex flex-col min-h-screen items-center">
       <NavBar />
-      <p className="text-primary-1 self-center">
-        {i18n.t('introduction.title')}
-      </p>
+      <p className="text-primary-1 m-auto">{i18n.t('introduction.title')}</p>
+      <Footer />
     </div>
   );
 };

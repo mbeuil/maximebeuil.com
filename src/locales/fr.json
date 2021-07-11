@@ -5,5 +5,9 @@
   "nav": {
     "language": "Bouton pour choisir une langue",
     "theme": "Bouton pour choisir une theme"
+  },
+  "footer":{
+    "socials_link": "Lien vers",
+    "email_link": "Lien pour me contacter par mail"
   }
 }

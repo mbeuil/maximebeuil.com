@@ -10,8 +10,12 @@ module.exports = {
         secondary: 'var(--color-bg-secondary)',
         tertiary: 'var(--color-bg-tertiary)',
         quaternary: 'var(--color-bg-quaternary)',
-        button: 'var(--button-primary-bg)',
-        hover: 'var(--button-primary-bg-hover)',
+        button: 'var(--button-primary)',
+        hover: 'var(--button-secondary)',
+        separator: {
+          primary: 'var(--border-primary)',
+          secondary: 'var(--border-secondary)',
+        },
       },
       textColor: {
         primary: {
@@ -20,12 +24,12 @@ module.exports = {
         },
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
-        blue: 'var(--button-primary-bg)',
-        link: 'var(--color-link)',
+        blue: 'var(--button-primary)',
+        link: 'var(--button-tertiary)',
         background: 'var(--color-bg-primary)',
       },
       borderColor: {
-        blue: 'var(--button-primary-bg)',
+        blue: 'var(--button-primary)',
       },
       stroke: ['hover', 'focus'],
       svgStroke: ['focus'],
@@ -33,7 +37,7 @@ module.exports = {
         page: 'auto 1fr',
       },
       margin: {
-        '-38': '-38px',
+        footer: 'calc(100% - 80px)',
       },
       padding: {
         1: '6px',
