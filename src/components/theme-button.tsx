@@ -30,7 +30,7 @@ const ThemeButton: React.FC = () => {
       onClick={handleClick}>
       <Weather
         theme={theme === Theme.DARK ? Theme.LIGHT : Theme.DARK}
-        className="text-primary-1 h-7 w-7"
+        className="text-secondary h-6 w-6"
       />
     </button>
   );
