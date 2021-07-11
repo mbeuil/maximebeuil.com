@@ -4,13 +4,11 @@ import { useI18n } from 'next-localization';
 import { Weather } from '@/icons';
 import { Theme } from '@/models';
 
-const QUERY = '(prefers-color-scheme: dark)';
-
 const ThemeButton: React.FC = () => {
+  const i18n = useI18n();
   const [theme, setTheme] = React.useState(() => {
     return document.body.classList.item(0) as string;
   });
-  const i18n = useI18n();
 
   React.useEffect(() => {
     if (theme === Theme.DARK) {
@@ -21,14 +19,6 @@ const ThemeButton: React.FC = () => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  React.useEffect(() => {
-    const mediaQuery = window.matchMedia(QUERY);
-    const handleChange = () =>
-      setTheme(mediaQuery.matches ? Theme.DARK : Theme.LIGHT);
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
-
   const handleClick = (): void =>
     setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
 
@@ -36,7 +26,7 @@ const ThemeButton: React.FC = () => {
     <button
       aria-label={i18n.t('nav.theme')}
       title={i18n.t('nav.theme')}
-      className="px-2 py-1 rounded relative hover:bg-secondary flex flex-row items-center gap-3"
+      className="px-2 py-1 rounded relative hover:bg-secondary flex flex-row items-center gap-3 theme-transition-3"
       onClick={handleClick}>
       <Weather
         theme={theme === Theme.DARK ? Theme.LIGHT : Theme.DARK}

@@ -2,6 +2,18 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render(): JSX.Element {
+    const setInitialTheme = `
+    function getThemePreference() {
+      if(window.localStorage.getItem('theme')) {
+        return window.localStorage.getItem('theme')
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+    }
+    document.body.classList.add(getThemePreference());
+  `;
+
     return (
       <Html>
         <Head>
@@ -14,11 +26,7 @@ class MyDocument extends Document {
           <meta name="color-scheme" content="dark light" />
         </Head>
         <body>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `function getThemePreference(){return localStorage.getItem("theme")?localStorage.getItem("theme"):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.body.classList.add(getThemePreference());`,
-            }}
-          />
+          <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
           <Main />
           <NextScript />
         </body>

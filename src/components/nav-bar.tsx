@@ -1,16 +1,17 @@
 import * as React from 'react';
 import NextLink from 'next/link';
+import dynamic from 'next/dynamic';
 import { useI18n } from 'next-localization';
 
 import { Logo } from '@/icons';
 import LanguageButton from '@/components/language-button';
-import ThemeButton from '@/components/theme-button';
+
+const ThemeButton = dynamic(() => import('@/components/theme-button'), {
+  ssr: false,
+});
 
 const NavBar: React.FC = () => {
-  const [mounted, setMounted] = React.useState(false);
   const i18n = useI18n();
-
-  React.useEffect(() => setMounted(true), []);
 
   return (
     <div className="absolute max-w-5xl flex flex-row w-full mt-5 items-center gap-3 px-5">
@@ -22,7 +23,7 @@ const NavBar: React.FC = () => {
           <Logo />
         </button>
       </NextLink>
-      {mounted && <ThemeButton />}
+      <ThemeButton />
       <LanguageButton />
       <button className="btn-blog">blog</button>
     </div>
