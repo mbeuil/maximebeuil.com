@@ -85,7 +85,7 @@ body {
 }
 
 .btn-blog {
-  @apply sm:text-lg text-background font-medium px-4 py-1 rounded bg-button hover:bg-hover;
+  @apply sm:text-lg text-background font-medium px-4 py-1 rounded bg-button hover:bg-hover font-fira;
 }
 
 .hover-link {
