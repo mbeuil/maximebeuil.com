@@ -8,7 +8,7 @@ This is a project build with :
 - [x] React v17
 - [x] Next v11
 - [x] Typescript
-- [x] React-Intl
+- [x] Next-localisation
 - [x] Tailwind
 
 Core app made of 3 pages :
@@ -18,7 +18,9 @@ Core app made of 3 pages :
 
 Features :
 - [x] Internationalization
-- [ ] Darkmode
+- [x] Darkmode
+- [x] Container
+- [ ] SEO
 - [ ] Kent C.Dodds MDX-Bundler
 
 Others :
