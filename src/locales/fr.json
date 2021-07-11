@@ -8,9 +8,5 @@
     "language_selected": "Choix de la langue",
     "logo": "Accueil",
     "theme": "Choix du theme"
-  },
-  "footer":{
-    "socials_link": "Lien vers",
-    "email_link": "Lien pour me contacter par mail"
   }
 }

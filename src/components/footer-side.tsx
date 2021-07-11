@@ -1,5 +1,3 @@
-import { useI18n } from 'next-localization';
-
 import { Socials } from '@/icons';
 import { email, socialMedia } from '@/utils';
 
@@ -13,8 +11,6 @@ const SideLink: React.FC = ({ children }) => {
 };
 
 const SideFooter: React.FC = () => {
-  const i18n = useI18n();
-
   return (
     <div className="max-w-5xl flex flex-row w-full">
       <div>
@@ -23,7 +19,7 @@ const SideFooter: React.FC = () => {
             <div className="py-3" key={index}>
               <a
                 href={url}
-                aria-label={i18n.t('footer.socials_link') + ' ' + name}
+                aria-label={name}
                 target="_blank"
                 rel="noopener noreferrer">
                 <Socials media={name} className="svg-link hover-link" />
@@ -35,7 +31,7 @@ const SideFooter: React.FC = () => {
       <div className="ml-footer">
         <SideLink>
           <a
-            aria-label={i18n.t('footer.email_link')}
+            aria-label={'email'}
             href={`mailto:${email}`}
             className="horizontal-tb p-3 font-fira text-xs tracking-widest hover-link">
             {email}
