@@ -8,5 +8,13 @@
     "language_selected": "Choix de la langue",
     "logo": "Accueil",
     "theme": "Choix du theme"
+  },
+  "seo": {
+    "title":"Maxime Beuil – Développeur.",
+    "description": "Passionné de React, aime lire et faire du Crossfit.",
+    "image": {
+      "url": "https://maximebeuil.com/images/banner-fr.png",
+      "alt": "Bannière du site maximebeuil.com"
+    }
   }
 }

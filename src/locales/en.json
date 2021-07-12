@@ -4,9 +4,17 @@
   },
   "nav": {
     "language_goto":"français",
-    "language_list":"Language option list",
+    "language_list":"Language options list",
     "language_selected": "Language button",
     "logo": "Home page",
     "theme": "Theme button"
+  },
+  "seo": {
+    "title":"Maxime Beuil – Developer.",
+    "description": "React enthusiast, book lover and Crossfit adept.",
+    "image": {
+      "url": "https://maximebeuil.com/images/banner.png",
+      "alt": "Banner for site maximebeuil.com"
+    }
   }
 }
