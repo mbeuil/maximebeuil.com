@@ -2,8 +2,10 @@
   "a11y": {
     "skip_to_content":"Skip to content"
   },
-  "introduction": {
-    "title": "Hello world!"
+  "home": {
+    "greetings":"Hi, my name is",
+    "short_description":"I'm a french developer",
+    "long_description":"Welcome to my blog ! I love diving into the React world and build exceptional applications. So I'm gonna wright about what I'm learning, about what interests me and, sometimes, merely about what I'm reading. It's gonna be technical, sceptical and a bit drawable."
   },
   "nav": {
     "language_goto":"français",

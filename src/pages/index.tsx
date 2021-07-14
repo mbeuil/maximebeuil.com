@@ -16,7 +16,20 @@ export const Home: React.FC = () => {
 
   return (
     <Container>
-      <p className="text-primary-1 ">{i18n.t('introduction.title')}</p>
+      <div className="">
+        <p className="text-blue sm:text-lg font-fira">
+          {i18n.t('home.greetings')}
+        </p>
+        <h1 className="text-primary-1 text-4xl font-bold mt-4 sm:text-6xl lg:text-7xl">
+          Maxime Beuil
+        </h1>
+        <h2 className="text-secondary text-3xl font-bold mt-4 sm:text-6xl lg:text-7xl">
+          {i18n.t('home.short_description')}
+        </h2>
+        <h2 className="text-secondary sm:text-lg mt-10 max-w-lg text-justify">
+          {i18n.t('home.long_description')}
+        </h2>
+      </div>
     </Container>
   );
 };

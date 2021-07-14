@@ -2,8 +2,10 @@
   "a11y": {
     "skip_to_content":"Aller au contenu"
   },
-  "introduction": {
-    "title": "Bonjour tout le monde!"
+  "home": {
+    "greetings":"Salut, moi c'est",
+    "short_description":"Je suis développeur",
+    "long_description":"Bienvenue sur mon blog ! Ici, je vai parler de ReactJS, de Github, d'open source et écrire sur les succés de mon quotidien. Je vai aussi coucher par écrit des réflexions totalement arbitraire sur le monde du dev. Et, qui sait, peut être trouverez vous ça interessant !"
   },
   "nav": {
     "language_goto":"english",
