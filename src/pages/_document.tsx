@@ -45,7 +45,7 @@ class MyDocument extends Document {
             href="/favicons/safari-pinned-tab.svg"
             color="#14191e"
           />
-          <meta name="theme-color" content="#14191e" />
+          <meta name="theme-color" content="#0d1219" />
           <meta name="color-scheme" content="dark light" />
         </Head>
         <body>
