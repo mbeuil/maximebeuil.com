@@ -1,4 +1,7 @@
 {
+  "a11y": {
+    "skip_to_content":"Aller au contenu"
+  },
   "introduction": {
     "title": "Bonjour tout le monde!"
   },

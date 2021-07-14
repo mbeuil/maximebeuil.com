@@ -74,6 +74,9 @@ const Container: React.FC<ContainerProps> = ({ children, seo }) => {
         <meta name="twitter:image" content={meta.image} />
         <meta name="twitter:image:alt" content={meta.imageAlt} />
       </Head>
+      <a href="#skip" className="skip-nav">
+        {i18n.t('a11y.skip_to_content')}
+      </a>
       <NavBar />
       <main
         id="skip"
