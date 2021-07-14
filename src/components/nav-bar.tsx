@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
   const i18n = useI18n();
 
   return (
-    <div className="absolute max-w-5xl flex flex-row w-full mt-5 items-center gap-3 px-5">
+    <div className="absolute max-w-5xl flex flex-row w-full mt-5 items-center gap-2 sm:gap-3 px-5">
       <NextLink href="/" passHref>
         <button
           aria-label={i18n.t('nav.logo')}
