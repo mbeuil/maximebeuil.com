@@ -97,9 +97,9 @@ body {
 }
 
 .theme-transition-2 {
-   @apply transition duration-200 ease-in-out;
+  @apply transition duration-200 ease-in-out;
 }
 
 .theme-transition-3 {
-   @apply transition duration-300 ease-in-out;
+  @apply transition duration-300 ease-in-out;
 }

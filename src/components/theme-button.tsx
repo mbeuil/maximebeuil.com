@@ -19,20 +19,30 @@ const ThemeButton: React.FC = () => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const handleClick = (): void =>
-    setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
+  const isDark = theme === Theme.DARK;
+  const handleClick = (): void => setTheme(isDark ? Theme.LIGHT : Theme.DARK);
 
   return (
-    <button
-      aria-label={i18n.t('nav.theme')}
-      title={i18n.t('nav.theme')}
-      className="px-2 py-1 rounded relative hover:bg-secondary flex flex-row items-center gap-3 theme-transition-3"
-      onClick={handleClick}>
-      <Weather
-        theme={theme === Theme.DARK ? Theme.LIGHT : Theme.DARK}
-        className="text-secondary h-6 w-6"
-      />
-    </button>
+    <>
+      <button
+        aria-label={i18n.t('nav.theme')}
+        title={i18n.t('nav.theme')}
+        className="rounded relative hover:bg-secondary theme-transition-3 inline-block h-10 w-10 leading-10 overflow-hidden"
+        onClick={handleClick}>
+        <Weather
+          theme={Theme.LIGHT}
+          className={`text-primary-1 h-6 w-6 m-2 relative block transition transform duration-300 ${
+            isDark ? '-translate-y-10' : ''
+          }`}
+        />
+        <Weather
+          theme={Theme.DARK}
+          className={`text-primary-1 h-6 w-6 m-2 mt-4 relative block transition transform duration-300 ${
+            isDark ? '-translate-y-10' : ''
+          }`}
+        />
+      </button>
+    </>
   );
 };
 
