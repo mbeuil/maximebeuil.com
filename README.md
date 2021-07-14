@@ -12,13 +12,15 @@ This is a project build with :
 - [x] Tailwind
 
 Core app made of 3 pages :
-- [ ] Homepage
+- [x] Homepage
 - [ ] Blogpage
 - [ ] Blog/Articlepage
 
 Features :
 - [x] Internationalization
 - [x] Darkmode
+- [x] NavBar
+- [x] Footer
 - [x] Container
 - [ ] SEO
 - [ ] Kent C.Dodds MDX-Bundler
