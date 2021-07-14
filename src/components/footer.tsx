@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      {width < 900 && <MobileFooter />}
-      {width >= 900 && <SideFooter />}
+      {width < 800 && <MobileFooter />}
+      {width >= 800 && <SideFooter />}
     </>
   );
 };

@@ -31,7 +31,7 @@ const SideFooter: React.FC = () => {
       <div className="ml-footer">
         <SideLink>
           <a
-            aria-label={'email'}
+            aria-label="email"
             href={`mailto:${email}`}
             className="horizontal-tb p-3 font-fira text-xs tracking-widest hover-link">
             {email}
