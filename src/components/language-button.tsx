@@ -35,7 +35,7 @@ const LanguageButton: React.FC = () => {
           className="w-7 h-7 filter grayscale"
         />
         <Arrow
-          className={`w-4 h-4 text-tertiary transition transform duration-200 ${
+          className={`w-4 h-4 text-primary-1 transition transform duration-200 ${
             visible ? 'rotate-180' : ''
           }`}
         />
