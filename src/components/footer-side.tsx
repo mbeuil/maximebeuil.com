@@ -3,16 +3,16 @@ import { email, socialMedia } from '@/utils';
 
 const SideLink: React.FC = ({ children }) => {
   return (
-    <div className="fixed bottom-0 z-10 text-secondary w-10 mx-5 ">
+    <div className="fixed bottom-0 z-10 w-10 mx-5 text-secondary ">
       {children}
-      <div className="block mt-5 w-px h-24 mx-auto bg-separator-secondary" />
+      <div className="block w-px h-24 mx-auto mt-5 bg-separator-secondary" />
     </div>
   );
 };
 
 const SideFooter: React.FC = () => {
   return (
-    <div className="max-w-5xl flex flex-row w-full">
+    <div className="flex flex-row w-full max-w-5xl">
       <div>
         <SideLink>
           {socialMedia.map(({ url, name }, index) => (
@@ -33,7 +33,7 @@ const SideFooter: React.FC = () => {
           <a
             aria-label="email"
             href={`mailto:${email}`}
-            className="horizontal-tb p-3 font-fira text-xs tracking-widest hover-link">
+            className="p-3 text-xs tracking-widest horizontal-tb font-fira hover-link">
             {email}
           </a>
         </SideLink>

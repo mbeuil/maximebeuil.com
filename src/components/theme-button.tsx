@@ -27,7 +27,7 @@ const ThemeButton: React.FC = () => {
       <button
         aria-label={i18n.t('nav.theme')}
         title={i18n.t('nav.theme')}
-        className="rounded relative hover:bg-secondary theme-transition-3 inline-block h-10 w-10 leading-10 overflow-hidden"
+        className="relative inline-block w-10 h-10 overflow-hidden leading-10 rounded hover:bg-secondary theme-transition-3"
         onClick={handleClick}>
         <Weather
           theme={Theme.LIGHT}

@@ -80,7 +80,7 @@ const Container: React.FC<ContainerProps> = ({ children, seo }) => {
       <NavBar />
       <main
         id="skip"
-        className="min-h-screen max-w-5xl px-5 flex flex-col justify-center items-center">
+        className="flex flex-col items-center justify-center max-w-5xl min-h-screen px-5">
         {children}
       </main>
       <Footer />
