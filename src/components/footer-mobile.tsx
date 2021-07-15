@@ -2,7 +2,7 @@ import { Socials } from '@/icons';
 import { IconsType } from '@/models';
 import { email, socialMedia } from '@/utils';
 
-const MobileFooter: React.FC = () => {
+function MobileFooter(): JSX.Element {
   return (
     <div className="fixed bottom-0 flex flex-row w-full m-auto mb-5 gap-7">
       <div className="block w-full h-px my-auto bg-separator-secondary" />
@@ -26,6 +26,6 @@ const MobileFooter: React.FC = () => {
       <div className="block w-full h-px my-auto bg-separator-secondary" />
     </div>
   );
-};
+}
 
 export default MobileFooter;

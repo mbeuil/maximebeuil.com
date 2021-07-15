@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   };
 };
 
-export const Home: React.FC = () => {
+export function Home(): JSX.Element {
   const i18n = useI18n();
 
   return (
@@ -32,6 +32,6 @@ export const Home: React.FC = () => {
       </div>
     </Container>
   );
-};
+}
 
 export default Home;

@@ -5,7 +5,7 @@ import { I18nProvider } from 'next-localization';
 import type { AppProps } from 'next/app';
 import '@/styles/index.css';
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const { lngDict, ...rest } = pageProps;
   const router = useRouter();
 
@@ -14,5 +14,5 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Component {...rest} />
     </I18nProvider>
   );
-};
+}
 export default MyApp;

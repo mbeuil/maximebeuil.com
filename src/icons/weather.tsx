@@ -7,11 +7,11 @@ interface SocialsProps {
   className?: string;
 }
 
-export const Weather: React.FC<SocialsProps> = ({ theme, className }) => {
+export function Weather({ theme, className }: SocialsProps): JSX.Element {
   switch (theme) {
     case Theme.DARK:
       return <Moon className={className} />;
     case Theme.LIGHT:
       return <Sun className={className} />;
   }
-};
+}

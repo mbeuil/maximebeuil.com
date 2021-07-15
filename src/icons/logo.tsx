@@ -1,4 +1,6 @@
-export const Logo: React.FC<{ className?: string }> = ({ className }) => {
+import { IconProps } from '@/models';
+
+export function Logo({ className }: IconProps): JSX.Element {
   return (
     <svg
       width="60px"
@@ -24,4 +26,4 @@ export const Logo: React.FC<{ className?: string }> = ({ className }) => {
       </g>
     </svg>
   );
-};
+}

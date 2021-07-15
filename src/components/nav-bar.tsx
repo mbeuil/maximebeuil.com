@@ -10,7 +10,7 @@ const ThemeButton = dynamic(() => import('@/components/theme-button'), {
   ssr: false,
 });
 
-const NavBar: React.FC = () => {
+function NavBar(): JSX.Element {
   const i18n = useI18n();
 
   return (
@@ -28,6 +28,6 @@ const NavBar: React.FC = () => {
       <button className="btn-blog">blog</button>
     </div>
   );
-};
+}
 
 export default NavBar;

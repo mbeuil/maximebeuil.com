@@ -1,4 +1,6 @@
-export const Arrow: React.FC<{ className?: string }> = ({ className }) => {
+import { IconProps } from '@/models';
+
+export function Arrow({ className }: IconProps): JSX.Element {
   return (
     <svg
       width="100%"
@@ -21,4 +23,4 @@ export const Arrow: React.FC<{ className?: string }> = ({ className }) => {
       />
     </svg>
   );
-};
+}

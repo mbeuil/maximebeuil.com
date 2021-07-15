@@ -7,10 +7,11 @@ import Footer from '@/components/footer';
 import { Language, Seo } from '@/models';
 
 interface ContainerProps {
+  children: React.ReactNode;
   seo?: Seo;
 }
 
-const Container: React.FC<ContainerProps> = ({ children, seo }) => {
+function Container({ children, seo }: ContainerProps): JSX.Element {
   const router = useRouter();
   const i18n = useI18n();
 
@@ -86,6 +87,6 @@ const Container: React.FC<ContainerProps> = ({ children, seo }) => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Container;

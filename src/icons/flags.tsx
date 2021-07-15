@@ -7,11 +7,11 @@ interface FlagProps {
   className?: string;
 }
 
-export const Flags: React.FC<FlagProps> = ({ language, className }) => {
+export function Flags({ language, className }: FlagProps): JSX.Element {
   switch (language) {
     case Language.EN:
       return <FlagEnUs className={className} />;
     case Language.FR:
       return <FlagFr className={className} />;
   }
-};
+}

@@ -1,4 +1,6 @@
-export const FlagEnUs: React.FC<{ className?: string }> = ({ className }) => {
+import { IconProps } from '@/models';
+
+export function FlagEnUs({ className }: IconProps): JSX.Element {
   return (
     <svg
       id="flag-en-us_svg__Layer_1"
@@ -62,4 +64,4 @@ export const FlagEnUs: React.FC<{ className?: string }> = ({ className }) => {
       </g>
     </svg>
   );
-};
+}

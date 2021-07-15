@@ -4,7 +4,7 @@ import { useI18n } from 'next-localization';
 import { Weather } from '@/icons';
 import { Theme } from '@/models';
 
-const ThemeButton: React.FC = () => {
+function ThemeButton(): JSX.Element {
   const i18n = useI18n();
   const [theme, setTheme] = React.useState(() => {
     return document.body.classList.item(0) as string;
@@ -44,6 +44,6 @@ const ThemeButton: React.FC = () => {
       </button>
     </>
   );
-};
+}
 
 export default ThemeButton;

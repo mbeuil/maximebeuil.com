@@ -7,7 +7,7 @@ import { useClickAwayListener } from '@/hooks';
 import { Arrow, Flags } from '@/icons';
 import { Language } from '@/models';
 
-const LanguageButton: React.FC = () => {
+function LanguageButton(): JSX.Element {
   const { locale, asPath } = useRouter();
   const i18n = useI18n();
   const [visible, setVisible] = React.useState(false);
@@ -42,8 +42,6 @@ const LanguageButton: React.FC = () => {
       </button>
       {visible && (
         <ul
-          id="exp_elem_list"
-          tabIndex={-1}
           role="listbox"
           aria-label={i18n.t('nav.language_list')}
           className="absolute right-0 py-2 rounded bg-secondary top-12 w-36">
@@ -64,6 +62,6 @@ const LanguageButton: React.FC = () => {
       )}
     </div>
   );
-};
+}
 
 export default LanguageButton;

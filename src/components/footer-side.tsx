@@ -1,16 +1,20 @@
 import { Socials } from '@/icons';
 import { email, socialMedia } from '@/utils';
 
-const SideLink: React.FC = ({ children }) => {
+interface SideLinkProps {
+  children: React.ReactNode;
+}
+
+function SideLink({ children }: SideLinkProps): JSX.Element {
   return (
     <div className="fixed bottom-0 z-10 w-10 mx-5 text-secondary ">
       {children}
       <div className="block w-px h-24 mx-auto mt-5 bg-separator-secondary" />
     </div>
   );
-};
+}
 
-const SideFooter: React.FC = () => {
+function SideFooter(): JSX.Element {
   return (
     <div className="flex flex-row w-full max-w-5xl">
       <div>
@@ -40,6 +44,6 @@ const SideFooter: React.FC = () => {
       </div>
     </div>
   );
-};
+}
 
 export default SideFooter;

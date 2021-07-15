@@ -1,4 +1,6 @@
-export const Linkedin: React.FC<{ className?: string }> = ({ className }) => {
+import { IconProps } from '@/models';
+
+export function Linkedin({ className }: IconProps): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +19,4 @@ export const Linkedin: React.FC<{ className?: string }> = ({ className }) => {
       <circle cx="4" cy="4" r="2" />
     </svg>
   );
-};
+}

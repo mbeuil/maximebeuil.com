@@ -1,4 +1,6 @@
-export const Email: React.FC<{ className?: string }> = ({ className }) => {
+import { IconProps } from '@/models';
+
+export function Email({ className }: IconProps): JSX.Element {
   return (
     <svg
       width="36px"
@@ -22,4 +24,4 @@ export const Email: React.FC<{ className?: string }> = ({ className }) => {
       </g>
     </svg>
   );
-};
+}

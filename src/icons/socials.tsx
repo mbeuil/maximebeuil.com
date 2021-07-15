@@ -9,7 +9,7 @@ interface SocialsProps {
   className?: string;
 }
 
-export const Socials: React.FC<SocialsProps> = ({ media, className }) => {
+export function Socials({ media, className }: SocialsProps): JSX.Element {
   switch (media) {
     case IconsType.GITHUB:
       return <GitHub className={className} />;
@@ -20,4 +20,4 @@ export const Socials: React.FC<SocialsProps> = ({ media, className }) => {
     case IconsType.EMAIL:
       return <Email className={className} />;
   }
-};
+}

@@ -2,7 +2,7 @@ import useWitdh from '@/hooks/use-width';
 import MobileFooter from './footer-mobile';
 import SideFooter from './footer-side';
 
-const Footer: React.FC = () => {
+function Footer(): JSX.Element {
   const { width } = useWitdh();
 
   return (
@@ -11,6 +11,6 @@ const Footer: React.FC = () => {
       {width >= 800 && <SideFooter />}
     </>
   );
-};
+}
 
 export default Footer;
