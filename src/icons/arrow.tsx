@@ -3,8 +3,8 @@ import { IconProps } from '@/models';
 export function Arrow({ className }: IconProps): JSX.Element {
   return (
     <svg
-      width="100%"
-      height="100%"
+      width="20px"
+      height="20px"
       viewBox="0 0 10 10"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

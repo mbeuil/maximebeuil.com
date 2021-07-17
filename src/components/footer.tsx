@@ -7,8 +7,8 @@ function Footer(): JSX.Element {
 
   return (
     <>
-      {width < 800 && <MobileFooter />}
-      {width >= 800 && <SideFooter />}
+      {width < 950 && <MobileFooter />}
+      {width >= 950 && <SideFooter />}
     </>
   );
 }

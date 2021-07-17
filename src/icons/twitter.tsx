@@ -9,6 +9,7 @@ export function Twitter({ className }: IconProps): JSX.Element {
       width="20px"
       height="20px"
       fill="none"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

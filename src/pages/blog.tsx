@@ -26,7 +26,7 @@ function Blog(): JSX.Element {
       <div className="">
         <div className="flex">
           <div className="block w-8 h-px my-auto bg-separator-secondary" />
-          <h1 className="mx-5 text-4xl font-bold sm:text-6xl text-primary-1">
+          <h1 className="mx-5 text-4xl font-bold sm:text-6xl text-primary-1 lg:text-7xl">
             Blog
           </h1>
           <div className="block w-full h-px my-auto bg-separator-secondary" />

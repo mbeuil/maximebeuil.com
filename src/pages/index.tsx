@@ -17,7 +17,7 @@ function Home(): JSX.Element {
 
   return (
     <Container>
-      <div className="">
+      <div>
         <p className="text-blue-1 sm:text-lg font-fira">
           {i18n.t('home.greetings')}
         </p>
