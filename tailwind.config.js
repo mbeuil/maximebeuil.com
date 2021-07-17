@@ -27,7 +27,11 @@ module.exports = {
         },
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
-        blue: 'var(--button-primary)',
+        blue: {
+          1: 'var(--button-primary)',
+          2: 'var(--button-secondary)',
+          3: 'var(--button-tertiary)',
+        },
         link: 'var(--button-tertiary)',
         background: 'var(--color-bg-primary)',
       },

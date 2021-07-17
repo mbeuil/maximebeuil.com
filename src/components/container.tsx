@@ -4,25 +4,25 @@ import { useI18n } from 'next-localization';
 
 import NavBar from '@/components/nav-bar';
 import Footer from '@/components/footer';
-import { Language, Seo } from '@/models';
+import { Language, Meta } from '@/models';
 
 interface ContainerProps {
   children: React.ReactNode;
-  seo?: Seo;
+  customMeta?: Meta;
 }
 
-function Container({ children, seo }: ContainerProps): JSX.Element {
+function Container({ children, customMeta }: ContainerProps): JSX.Element {
   const router = useRouter();
   const i18n = useI18n();
 
   const meta = {
-    title: i18n.t('seo.title'),
-    description: i18n.t('seo.description'),
-    image: i18n.t('seo.image.url'),
-    imageAlt: i18n.t('seo.image.alt'),
+    title: i18n.t('meta.title'),
+    description: i18n.t('meta.description'),
+    image: i18n.t('meta.image.url'),
+    imageAlt: i18n.t('meta.image.alt'),
     type: 'website',
 
-    ...seo,
+    ...customMeta,
   };
 
   const language = router.locale;
@@ -81,7 +81,7 @@ function Container({ children, seo }: ContainerProps): JSX.Element {
       <NavBar />
       <main
         id="skip"
-        className="flex flex-col items-center justify-center max-w-5xl min-h-screen px-5">
+        className="flex flex-col items-center justify-center max-w-3xl min-h-screen px-5">
         {children}
       </main>
       <Footer />

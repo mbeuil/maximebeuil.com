@@ -7,6 +7,9 @@
     "short_description":"Je suis développeur",
     "long_description":"Bienvenue sur mon blog ! Ici, je vai parler de ReactJS, de Github, d'open source et écrire sur les succés de mon quotidien. Je vai aussi coucher par écrit des réflexions totalement arbitraire sur le monde du dev. Et, qui sait, peut être trouverez vous ça interessant !"
   },
+  "blog": {
+    "meta_description":"Articles pour partager mes notes, des tutoriels et de temps en temps des réflexions."
+  },
   "nav": {
     "language_goto":"english",
     "language_list":"Liste des langues",
@@ -14,7 +17,7 @@
     "logo": "Accueil",
     "theme": "Choix du theme"
   },
-  "seo": {
+  "meta": {
     "title":"Maxime Beuil",
     "description": "Passionné de React, aime lire et faire du Crossfit.",
     "image": {

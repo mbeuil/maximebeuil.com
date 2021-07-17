@@ -81,7 +81,7 @@ body {
 }
 
 .btn {
-  @apply text-blue border rounded border-blue py-5 px-7 text-sm;
+  @apply text-blue-1 border rounded border-blue py-5 px-7 text-sm;
 }
 
 .btn-blog {
@@ -89,7 +89,7 @@ body {
 }
 
 .hover-link {
-  @apply transition transform duration-200 hover:-translate-y-1 hover:text-blue;
+  @apply transition transform duration-200 hover:-translate-y-1 hover:text-blue-1;
 }
 
 .svg-link {

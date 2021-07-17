@@ -25,7 +25,9 @@ function NavBar(): JSX.Element {
       </NextLink>
       <ThemeButton />
       <LanguageButton />
-      <button className="btn-blog">blog</button>
+      <NextLink href="/blog" passHref>
+        <button className="btn-blog">blog</button>
+      </NextLink>
     </div>
   );
 }
