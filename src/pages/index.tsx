@@ -3,6 +3,7 @@ import type { GetStaticProps } from 'next';
 import { useI18n } from 'next-localization';
 
 import Container from '@/components/container';
+
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const { default: lngDict = {} } = await import(`../locales/${locale}.json`);
 
