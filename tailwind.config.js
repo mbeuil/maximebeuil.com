@@ -21,12 +21,10 @@ module.exports = {
         },
       },
       textColor: {
-        primary: {
-          1: 'var(--color-base-1)',
-          2: 'var(--color-base-2)',
-        },
+        primary: 'var(--color-base-1)',
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
+        primaryHover: 'var(--color-base-2)',
         blue: {
           1: 'var(--button-primary)',
           2: 'var(--button-secondary)',
@@ -36,6 +34,8 @@ module.exports = {
         background: 'var(--color-bg-primary)',
       },
       borderColor: {
+        primary: 'var(--border-primary)',
+        secondary: 'var(--border-secondary)',
         blue: 'var(--button-primary)',
       },
       stroke: ['hover', 'focus'],

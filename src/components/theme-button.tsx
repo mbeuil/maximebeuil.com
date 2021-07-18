@@ -31,13 +31,13 @@ function ThemeButton(): JSX.Element {
         onClick={handleClick}>
         <Weather
           theme={Theme.LIGHT}
-          className={`text-primary-1 h-6 w-6 m-2 relative block transition transform duration-300 ${
+          className={`text-primary h-6 w-6 m-2 relative block transition transform duration-300 ${
             isDark ? '-translate-y-10' : ''
           }`}
         />
         <Weather
           theme={Theme.DARK}
-          className={`text-primary-1 h-6 w-6 m-2 mt-4 relative block transition transform duration-300 ${
+          className={`text-primary h-6 w-6 m-2 mt-4 relative block transition transform duration-300 ${
             isDark ? '-translate-y-10' : ''
           }`}
         />

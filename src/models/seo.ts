@@ -6,4 +6,6 @@ export interface Meta {
   type?: 'website' | 'article';
   publishedDate?: string;
   tags?: string[];
+  alternate?: string;
+  isPublished?: boolean;
 }

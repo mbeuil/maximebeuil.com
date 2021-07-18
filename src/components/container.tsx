@@ -25,6 +25,8 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
     ...customMeta,
   };
 
+  console.log(customMeta?.alternate);
+
   const language = router.locale;
   const otherLanguage = language === Language.EN ? 'fr_FR' : 'en_US';
   const selectedLanguage = language === Language.EN ? 'en_US' : 'fr_FR';
@@ -78,10 +80,12 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
       <a href="#skip" className="skip-nav">
         {i18n.t('a11y.skip_to_content')}
       </a>
-      <NavBar />
+      <NavBar
+        path={isArticle && meta.alternate ? meta.alternate : router.asPath}
+      />
       <main
         id="skip"
-        className="flex flex-col items-center justify-center max-w-3xl min-h-screen px-5">
+        className="flex flex-col items-center justify-center w-full max-w-3xl min-h-screen px-5">
         {children}
       </main>
       <Footer />

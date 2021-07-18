@@ -19,6 +19,7 @@
     }
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "mdx-bundler": "^5.1.0",
     "next": "11.0.0",
     "next-localization": "^0.11.0",

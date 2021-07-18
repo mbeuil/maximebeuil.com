@@ -7,8 +7,12 @@ import { useClickAwayListener } from '@/hooks';
 import { Arrow, Flags } from '@/icons';
 import { Language } from '@/models';
 
-function LanguageButton(): JSX.Element {
-  const { locale, asPath } = useRouter();
+interface LanguageButtonProps {
+  path: string;
+}
+
+function LanguageButton({ path }: LanguageButtonProps): JSX.Element {
+  const { locale } = useRouter();
   const i18n = useI18n();
   const [visible, setVisible] = React.useState(false);
   const languageButtonRef = useClickAwayListener<HTMLDivElement>(() =>
@@ -19,7 +23,7 @@ function LanguageButton(): JSX.Element {
 
   const selectedLanguage = locale === Language.FR ? Language.FR : Language.EN;
   const otherLanguage = locale === Language.FR ? Language.EN : Language.FR;
-  const to = locale === Language.FR ? asPath : `/fr${asPath}`;
+  const to = locale === Language.FR ? path : `/fr${path}`;
 
   return (
     <div ref={languageButtonRef} className="relative">
@@ -35,7 +39,7 @@ function LanguageButton(): JSX.Element {
           className="w-7 h-7 filter grayscale"
         />
         <Arrow
-          className={`w-4 h-4 text-primary-1 transition transform duration-200 ${
+          className={`w-4 h-4 text-primary transition transform duration-200 ${
             visible ? 'rotate-180' : ''
           }`}
         />

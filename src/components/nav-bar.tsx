@@ -10,7 +10,11 @@ const ThemeButton = dynamic(() => import('@/components/theme-button'), {
   ssr: false,
 });
 
-function NavBar(): JSX.Element {
+interface NavBarProps {
+  path: string;
+}
+
+function NavBar({ path }: NavBarProps): JSX.Element {
   const i18n = useI18n();
 
   return (
@@ -19,12 +23,12 @@ function NavBar(): JSX.Element {
         <button
           aria-label={i18n.t('nav.logo')}
           title={i18n.t('nav.logo')}
-          className="mr-auto text-primary-1 hover:text-primary-2">
+          className="mr-auto text-primary hover:text-primaryHover">
           <Logo />
         </button>
       </NextLink>
       <ThemeButton />
-      <LanguageButton />
+      <LanguageButton path={path} />
       <NextLink href="/blog" passHref>
         <button className="btn-blog">blog</button>
       </NextLink>
