@@ -3,6 +3,8 @@
 Hey folks !
 
 Welcome to my open sourced personal blog. Feel free to look around what I did and how I did it. 
+The blog stack
+> React, Next, Typescript, Tailwind
 
 This is a project build with :
 - [x] React v17
@@ -13,7 +15,7 @@ This is a project build with :
 
 Core app made of 3 pages :
 - [x] Homepage
-- [ ] Blogpage
+- [x] Blogpage
 - [ ] Blog/Articlepage
 
 Features :
@@ -22,14 +24,27 @@ Features :
 - [x] NavBar
 - [x] Footer
 - [x] Container
+- [x] Content Management with Kent C.Dodds MDX-Bundler
+- [ ] Customize mdx css
 - [ ] SEO
-- [ ] Kent C.Dodds MDX-Bundler
 
 Others :
 - [x] commit festures commitizen + pre-commit script commitlint & husky
-- [ ] Design with jest (half way through)
+- [x] Design with jest (half way through)
+- [ ] generate RSS
+- [ ] generate sitemap
+- [ ] generate sitemap
 
-----
+Final:
+- [ ] host on vercel
+- [ ] handle google bots
+- [ ] add analytics
+
+***
+
+You can see an early draft of the website, when the goal was to create a portfolio :
+
+![](mbDA.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
