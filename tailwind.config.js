@@ -1,6 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
@@ -40,17 +42,8 @@ module.exports = {
       },
       stroke: ['hover', 'focus'],
       svgStroke: ['focus'],
-      gridTemplateRows: {
-        page: 'auto 1fr',
-      },
       margin: {
         footer: 'calc(100% - 80px)',
-      },
-      padding: {
-        1: '6px',
-      },
-      width: {
-        home: '1000px',
       },
     },
   },
