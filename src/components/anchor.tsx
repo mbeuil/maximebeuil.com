@@ -1,8 +1,8 @@
-import { forwardRef } from 'react';
+import * as React from 'react';
 
 type AnchorProps = React.HTMLProps<HTMLAnchorElement>;
 
-const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
+const Anchor = React.forwardRef<HTMLAnchorElement, AnchorProps>(
   ({ children, onClick, href, ...props }, ref) => {
     return (
       <a href={href} onClick={onClick} ref={ref} {...props}>

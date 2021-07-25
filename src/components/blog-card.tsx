@@ -1,6 +1,7 @@
-import Link from 'next/link';
+import NextLink from 'next/link';
 import { useState } from 'react';
 
+import Anchor from '@/components/anchor';
 import { Information } from '@/models';
 
 function BlogCard({
@@ -13,8 +14,8 @@ function BlogCard({
   const [isHover, setIsHover] = useState(false);
   const handleHover = (): void => setIsHover(!isHover);
   return (
-    <Link href={`/blog/${slug}`} passHref>
-      <button
+    <NextLink href={`/blog/${slug}`} passHref>
+      <Anchor
         className="flex flex-col w-full px-3 py-5 rounded sm:px-8 bg-secondary"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}>
@@ -28,8 +29,8 @@ function BlogCard({
           ))}
           <p className="ml-auto text-secondary">{publishedDate}</p>
         </div>
-      </button>
-    </Link>
+      </Anchor>
+    </NextLink>
   );
 }
 

@@ -1,19 +1,19 @@
-import { RefObject, useRef, useEffect } from 'react';
+import * as React from 'react';
 
 export const useClickAwayListener = <T extends HTMLElement | SVGElement>(
   clickAwayHandler: () => void,
-): RefObject<T> => {
-  const ref = useRef<T>(null);
+): React.RefObject<T> => {
+  const ref = React.useRef<T>(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent): void => {
+  React.useEffect(() => {
+    const handleClickOutsideRefElement = (event: MouseEvent): void => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
         clickAwayHandler();
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutsideRefElement);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutsideRefElement);
     };
   }, [clickAwayHandler]);
 

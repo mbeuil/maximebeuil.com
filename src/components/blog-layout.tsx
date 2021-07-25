@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 
-import { BlogPost, Meta } from '@/models';
 import Container from '@/components/container';
-import MdxComponents from './mdx-components';
-import BlogTitle from './blog-title';
+import MdxComponents from '@/components/mdx-components';
+import BlogTitle from '@/components/blog-title';
+import { BlogPost, Meta } from '@/models';
 
 function BlogLayout({ code, frontmatter }: BlogPost): JSX.Element {
   const Component = useMemo(() => getMDXComponent(code), [code]);
