@@ -7,7 +7,7 @@ interface SideLinkProps {
 
 function SideLink({ children }: SideLinkProps): JSX.Element {
   return (
-    <div className="fixed bottom-0 z-10 w-10 mx-5 text-secondary ">
+    <div className="fixed bottom-0 z-10 w-10 mx-5 text-primary">
       {children}
       <div className="block w-px h-24 mx-auto mt-5 bg-separator-secondary" />
     </div>

@@ -4,8 +4,8 @@ import { email, socialMedia } from '@/utils';
 
 function MobileFooter(): JSX.Element {
   return (
-    <div className="fixed bottom-0 flex flex-row w-full m-auto mb-5 gap-7">
-      <div className="block w-full h-px my-auto bg-separator-secondary" />
+    <div className="bottom-0 flex flex-row w-full m-auto mb-5 gap-7">
+      <div className="w-full separator-x" />
       {socialMedia.map(({ url, name }, index) => (
         <a
           key={index}
@@ -23,7 +23,7 @@ function MobileFooter(): JSX.Element {
         rel="noopener noreferrer">
         <Socials media={IconsType.EMAIL} className="svg-link hover-link" />
       </a>
-      <div className="block w-full h-px my-auto bg-separator-secondary" />
+      <div className="w-full separator-x" />
     </div>
   );
 }
