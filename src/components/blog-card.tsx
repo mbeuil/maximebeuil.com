@@ -1,8 +1,9 @@
 import NextLink from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 import Anchor from '@/components/anchor';
-import { Information } from '@/models';
+import { Information, Language } from '@/models';
+import { formatDate } from '@/utils';
 
 function BlogCard({
   description,
@@ -11,15 +12,17 @@ function BlogCard({
   title,
   slug,
 }: Information): JSX.Element {
-  const [isHover, setIsHover] = useState(false);
-  const handleHover = (): void => setIsHover(!isHover);
+  const { locale } = useRouter();
+
+  const date = formatDate(
+    locale === Language.EN ? 'en-US' : 'fr-FR',
+    new Date(publishedDate),
+  );
+
   return (
     <NextLink href={`/blog/${slug}`} passHref>
-      <Anchor
-        className="flex flex-col w-full px-3 py-5 rounded sm:px-8 bg-secondary"
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}>
-        <h4 className="text-2xl font-bold text-primary">{title}</h4>
+      <Anchor className="flex flex-col w-full px-3 py-5 rounded sm:px-8 bg-secondary">
+        <h2 className="text-2xl font-bold text-primary">{title}</h2>
         <p className="text-justify text-primary">{description}</p>
         <div className="flex w-full mt-4 text-sm font-fira">
           {tags.map((tag, id) => (
@@ -27,7 +30,7 @@ function BlogCard({
               #{tag}
             </p>
           ))}
-          <p className="ml-auto text-secondary">{publishedDate}</p>
+          <p className="ml-auto text-secondary">{date}</p>
         </div>
       </Anchor>
     </NextLink>
