@@ -5,9 +5,9 @@ import { GetStaticProps } from 'next';
 import Container from '@/components/container';
 import { Information } from '@/models';
 import { getAllPosts } from '@/utils/mdx';
-
 import test from '../../public/images/mb-working.png';
 import BlogCard from '@/components/blog-card';
+import BlogTitle from '@/components/blog-title';
 
 interface BlogProps {
   posts: Information[];
@@ -21,18 +21,10 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
     description: i18n.t('blog.meta_description'),
   };
 
-  console.log(posts);
-
   return (
     <Container customMeta={meta}>
       <div className="pb-16 pt-28 sm:pt-36">
-        <div className="flex">
-          <div className="block w-8 h-px my-auto bg-separator-secondary" />
-          <h1 className="mx-5 text-4xl font-bold sm:text-6xl text-primary lg:text-7xl">
-            Blog
-          </h1>
-          <div className="block w-full h-px my-auto bg-separator-secondary" />
-        </div>
+        <BlogTitle text="Blog" />
         <Image
           alt={'Sketch of Maxime Beuil working on his computer'}
           src={test}

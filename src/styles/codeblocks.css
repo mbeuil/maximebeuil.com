@@ -1,0 +1,117 @@
+/*!
+Theme: Edge Dark/Light
+Author: cjayross (https://github.com/cjayross)
+License: ~ MIT (or more permissive) [via base16-schemes-source]
+Maintainer: @highlightjs/core-team
+Version: 2021.05.0
+*/
+pre 
+
+code.hljs{
+    display:block;
+    overflow-x:auto;
+    padding:1em;
+    margin-top: 2.75rem;
+    margin-bottom: 1.25rem
+}
+
+code.hljs{
+    padding:3px 5px
+}
+
+.hljs{
+    color:var(--color-base-1);
+    border-radius: 0.25rem;
+    background:var(--color-bg-secondary)
+}
+
+.hljs ::selection{
+    color:var(--code-select)
+}
+
+.hljs-comment{
+    color:var(--color-tertiary)
+}
+
+.hljs-tag{
+    color:var(--button-tertiary)
+}
+
+.hljs-operator,
+.hljs-punctuation,
+.hljs-subst{
+    color:var(--code-operator)
+}
+
+.hljs-operator{opacity:.7}
+.hljs-attr,
+.hljs-bullet,
+.hljs-deletion,
+.hljs-link,
+.hljs-literal,
+.hljs-name,
+.hljs-number,
+.hljs-selector-tag,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable,
+.hljs-variable.constant_{
+    color:var(--code-variable)
+}
+
+.hljs-class.hljs-title,
+.hljs-title,
+.hljs-title.class_{
+    color:var(--code-class)
+}
+
+.hljs-strong{
+    font-weight:700;
+    color:var(--code-class)
+}
+
+.hljs-addition,
+.hljs-code,
+.hljs-string,
+.hljs-title.class_.inherited__{
+    color:var(--code-string)
+}
+
+.hljs-built_in,
+.hljs-doctag,
+.hljs-keyword.hljs-atrule,
+.hljs-quote,
+.hljs-regexp{
+    color:var(--code-quote)
+}
+
+.hljs-attribute,
+.hljs-function .hljs-title,
+.hljs-section,
+.hljs-title.function_,
+.ruby .hljs-property{
+    color:var(--button-tertiary)
+}
+
+.diff .hljs-meta,
+.hljs-keyword,
+.hljs-template-tag,
+.hljs-type{
+    color:var(--code-keyword)
+}
+
+.hljs-emphasis{
+    color:var(--code-keyword);
+    font-style:italic
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string{
+    color:var(--code-quote)
+}
+
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword{
+    font-weight:700
+}

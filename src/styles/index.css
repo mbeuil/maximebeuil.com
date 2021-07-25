@@ -7,7 +7,7 @@
     --color-bg-primary: #fff;
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #d2d6db;
-    --color-bg-quaternary: #a7adb2;
+    --color-bg-quaternary: #f9fafa;
     --button-primary: #17a1f6;
     --button-secondary: #456fdf;  
     --button-tertiary: #323ebe;
@@ -18,12 +18,19 @@
     --color-tertiary: #64707d;
     --border-primary: #08090a0d;
     --border-secondary: #08090a1a;
+    --code-select: #d69822;
+    --code-operator: #5e646f;
+    --code-variable: #d91e18;
+    --code-class: #d69822;
+    --code-string: #7c9f4b;
+    --code-quote: #509c93;
+    --code-keyword: #a626a4;
   }
   .dark {
     --color-bg-primary: #0d1219;
     --color-bg-secondary: #1a2634;
     --color-bg-tertiary: #2e3a48;
-    --color-bg-quaternary: #a7adb2;
+    --color-bg-quaternary: #1a1e25;
     --button-primary: #7b78ff;
     --button-secondary: #5855f3;
     --button-tertiary: #17a1f6;
@@ -34,6 +41,13 @@
     --color-tertiary: #747c85;
     --border-primary: #ffffff1a;
     --border-secondary: #ffffff26;
+    --code-select: #b7bec9;
+    --code-operator: #b7bec9;
+    --code-variable: #e77171;
+    --code-class: #dbb774;
+    --code-string: #a1bf78;
+    --code-quote: #5ebaa5;
+    --code-keyword: #d390e7;
   }
 }
 
@@ -42,7 +56,7 @@
     --color-bg-primary: #0d1219;
     --color-bg-secondary: #1a2634;
     --color-bg-tertiary: #2e3a48;
-    --color-bg-quaternary: #a7adb2;
+    --color-bg-quaternary: #1a1e25;
     --button-primary: #7b78ff;
     --button-secondary: #5855f3;
     --button-tertiary: #17a1f6;
@@ -53,12 +67,19 @@
     --color-tertiary: #747c85;
     --border-primary: #ffffff1a;
     --border-secondary: #ffffff26;
+    --code-select: #b7bec9;
+    --code-operator: #b7bec9;
+    --code-variable: #e77171;
+    --code-class: #dbb774;
+    --code-string: #a1bf78;
+    --code-quote: #5ebaa5;
+    --code-keyword:  #d390e7;
   }
   .light {
     --color-bg-primary: #fff;
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #08090a0d;
-    --color-bg-quaternary: #a7adb2; 
+    --color-bg-quaternary: #f9fafa; 
     --button-primary: #17a1f6;
     --button-secondary: #456fdf;  
     --button-tertiary: #323ebe;
@@ -69,15 +90,36 @@
     --color-tertiary: #64707d; 
     --border-primary: #08090a0d;
     --border-secondary: #08090a1a;
+    --code-select: #d69822;
+    --code-operator: #5e646f;
+    --code-variable: #d91e18;
+    --code-class: #d69822;
+    --code-string: #7c9f4b;
+    --code-quote: #509c93;
+    --code-keyword: #a626a4;
   }
 }
 
 html,
 
 body {
-  @apply bg-primary theme-transition-2;
+  @apply bg-primary transition duration-200 ease-in-out;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.anchor {
+  @apply absolute invisible;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible no-underline;
 }
 
 .btn {
@@ -92,8 +134,12 @@ body {
   @apply transition transform duration-200 hover:-translate-y-1 hover:text-blue-1;
 }
 
+.quote {
+  @apply text-justify border-l-2 font-fira sm:text-lg sm:pl-4 border-blue;
+}
+
 .svg-link {
-  @apply stroke-current text-secondary w-5 h-5 m-auto;
+  @apply stroke-current text-primary w-5 h-5 m-auto;
 }
 
 .theme-transition-2 {
@@ -106,4 +152,8 @@ body {
 
 .skip-nav {
   @apply absolute px-4 py-2 mt-5 -translate-y-16 transition-transform duration-200 transform focus:translate-y-0;
+}
+
+.separator-x {
+  @apply block h-px my-auto bg-separator-secondary;
 }

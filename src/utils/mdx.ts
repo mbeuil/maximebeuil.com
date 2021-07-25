@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { bundleMDX } from 'mdx-bundler';
+import unwrapImages from 'remark-unwrap-images';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const highlight = require('rehype-highlight');
 
 import { BlogPost, Frontmatter, Information } from '@/models';
 
@@ -35,7 +38,13 @@ export function getAllPosts(locale?: string): Information[] {
 
 export async function getSinglePost(slug: string): Promise<BlogPost> {
   const source = getSourceOfFile(slug + '.mdx');
-  const result = await bundleMDX(source);
+  const result = await bundleMDX(source, {
+    xdmOptions(options) {
+      options.rehypePlugins = [...(options.rehypePlugins ?? []), highlight];
+      options.remarkPlugins = [...(options.remarkPlugins ?? []), unwrapImages];
+      return options;
+    },
+  });
 
   return result as BlogPost;
 }

@@ -4,6 +4,7 @@ import { I18nProvider } from 'next-localization';
 
 import type { AppProps } from 'next/app';
 import '@/styles/index.css';
+import '@/styles/codeblocks.css';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const { lngDict, ...rest } = pageProps;

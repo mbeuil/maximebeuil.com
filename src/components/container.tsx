@@ -25,8 +25,6 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
     ...customMeta,
   };
 
-  console.log(customMeta?.alternate);
-
   const language = router.locale;
   const otherLanguage = language === Language.EN ? 'fr_FR' : 'en_US';
   const selectedLanguage = language === Language.EN ? 'en_US' : 'fr_FR';
