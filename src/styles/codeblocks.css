@@ -30,7 +30,7 @@ code.hljs{
 }
 
 .hljs-comment{
-    color:var(--color-tertiary)
+    color:var(--code-comment)
 }
 
 .hljs-tag{

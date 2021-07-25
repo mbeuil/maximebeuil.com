@@ -8,8 +8,8 @@
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #d2d6db;
     --color-bg-quaternary: #f9fafa;
-    --button-primary: #17a1f6;
-    --button-secondary: #456fdf;  
+    --button-primary: #555EE2;
+    --button-secondary: #323ebe;  
     --button-tertiary: #323ebe;
     --color-base-1: #08090a;
     --color-base-2: #363d44;
@@ -25,6 +25,7 @@
     --code-string: #7c9f4b;
     --code-quote: #509c93;
     --code-keyword: #a626a4;
+    --code-comment: #64707d;
   }
   .dark {
     --color-bg-primary: #0d1219;
@@ -48,6 +49,7 @@
     --code-string: #a1bf78;
     --code-quote: #5ebaa5;
     --code-keyword: #d390e7;
+    --code-comment: #a7adb2;
   }
 }
 
@@ -74,14 +76,15 @@
     --code-string: #a1bf78;
     --code-quote: #5ebaa5;
     --code-keyword:  #d390e7;
+    --code-comment: #a7adb2;
   }
   .light {
     --color-bg-primary: #fff;
     --color-bg-secondary: #f3f4f6;
     --color-bg-tertiary: #08090a0d;
     --color-bg-quaternary: #f9fafa; 
-    --button-primary: #17a1f6;
-    --button-secondary: #456fdf;  
+    --button-primary: #555EE2;
+    --button-secondary: #323ebe;  
     --button-tertiary: #323ebe;
     --color-base-1: #08090a;
     --color-base-2: #363d44;
@@ -97,6 +100,7 @@
     --code-string: #7c9f4b;
     --code-quote: #509c93;
     --code-keyword: #a626a4;
+    --code-comment: #64707d;
   }
 }
 
