@@ -4,7 +4,7 @@ import { email, socialMedia } from '@/utils';
 
 function MobileFooter(): JSX.Element {
   return (
-    <div className="bottom-0 flex flex-row w-full m-auto mb-5 gap-7">
+    <footer className="bottom-0 flex flex-row w-full m-auto mb-5 gap-7">
       <div className="w-full separator-x" />
       {socialMedia.map(({ url, name }, index) => (
         <a
@@ -24,7 +24,7 @@ function MobileFooter(): JSX.Element {
         <Socials media={IconsType.EMAIL} className="svg-link hover-link" />
       </a>
       <div className="w-full separator-x" />
-    </div>
+    </footer>
   );
 }
 

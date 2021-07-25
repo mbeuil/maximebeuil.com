@@ -16,7 +16,7 @@ function SideLink({ children }: SideLinkProps): JSX.Element {
 
 function SideFooter(): JSX.Element {
   return (
-    <div className="flex flex-row w-full max-w-5xl">
+    <footer className="flex flex-row w-full max-w-5xl">
       <div>
         <SideLink>
           {socialMedia.map(({ url, name }, index) => (
@@ -42,7 +42,7 @@ function SideFooter(): JSX.Element {
           </a>
         </SideLink>
       </div>
-    </div>
+    </footer>
   );
 }
 
