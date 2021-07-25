@@ -5,7 +5,7 @@ const getWidth = (): number =>
   document.documentElement.clientWidth ||
   document.body.clientWidth;
 
-const useWitdh = (): { width: number } => {
+export const useWidth = (): { width: number } => {
   const [width, setWidth] = React.useState(0);
 
   React.useEffect(() => {
@@ -27,5 +27,3 @@ const useWitdh = (): { width: number } => {
 
   return { width };
 };
-
-export default useWitdh;

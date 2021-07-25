@@ -1,9 +1,9 @@
-import useWitdh from '@/hooks/use-width';
-import MobileFooter from './footer-mobile';
-import SideFooter from './footer-side';
+import MobileFooter from '@/components/footer-mobile';
+import SideFooter from '@/components/footer-side';
+import { useWidth } from '@/hooks';
 
 function Footer(): JSX.Element {
-  const { width } = useWitdh();
+  const { width } = useWidth();
 
   return (
     <>
