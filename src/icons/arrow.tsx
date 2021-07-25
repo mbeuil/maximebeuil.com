@@ -3,23 +3,16 @@ import { IconProps } from '@/models';
 export function Arrow({ className }: IconProps): JSX.Element {
   return (
     <svg
-      width="20px"
-      height="20px"
-      viewBox="0 0 10 10"
-      version="1.1"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      xmlSpace="preserve"
-      fillRule="evenodd"
-      clipRule="evenodd"
-      strokeMiterlimit="1.5"
       className={className}>
       <title>Arrow icon</title>
       <path
-        d="M0.495,2.506L5.009,7.038L9.529,2.511"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.25px"
+        d="M17.586 11l-5.293-5.293a1 1 0 1 1 1.414-1.414l7 7c.63.63.184 1.707-.707 1.707H4a1 1 0 0 1 0-2h13.586zm-.75 3.253a1 1 0 1 1 1.328 1.494l-4.5 4a1 1 0 1 1-1.328-1.494l4.5-4z"
+        fill="currentColor"
+        fillRule="nonzero"
       />
     </svg>
   );
