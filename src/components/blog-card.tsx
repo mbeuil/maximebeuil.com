@@ -23,7 +23,7 @@ function BlogCard({
     <NextLink href={`/blog/${slug}`} passHref>
       <Anchor className="flex flex-col w-full px-3 py-5 rounded sm:px-8 bg-secondary">
         <h2 className="text-2xl font-bold text-primary">{title}</h2>
-        <p className="text-justify text-primary">{description}</p>
+        <p className="text-primary">{description}</p>
         <div className="flex w-full mt-4 text-sm font-fira">
           {tags.map((tag, id) => (
             <p key={id} className="text-secondary">

@@ -27,9 +27,9 @@ function Home(): JSX.Element {
         <h2 className="mt-4 text-3xl font-bold text-secondary sm:text-6xl lg:text-7xl">
           {i18n.t('home.short_description')}
         </h2>
-        <h2 className="max-w-lg mt-10 text-justify text-primary sm:text-lg">
+        <p className="max-w-lg mt-10 text-primary sm:text-lg">
           {i18n.t('home.long_description')}
-        </h2>
+        </p>
       </div>
     </Container>
   );

@@ -139,7 +139,7 @@ body {
 }
 
 .quote {
-  @apply text-justify border-l-2 font-fira sm:text-lg sm:pl-4 border-blue;
+  @apply border-l-2 font-fira sm:text-lg sm:pl-4 border-blue;
 }
 
 .svg-link {
@@ -155,7 +155,7 @@ body {
 }
 
 .skip-nav {
-  @apply absolute px-4 py-2 mt-5 -translate-y-16 transition-transform duration-200 transform focus:translate-y-0;
+  @apply absolute -translate-y-28 px-4 py-2 mt-20 transition-transform duration-200 transform focus:translate-y-0 rounded text-primary border border-secondary;
 }
 
 .separator-x {
