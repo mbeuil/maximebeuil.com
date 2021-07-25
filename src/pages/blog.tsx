@@ -33,6 +33,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
           priority
           placeholder="empty"
         />
+        <h2 className="sr-only">{i18n.t('blog.sub_header')}</h2>
         <div className="flex flex-col gap-5 mt-5 sm:mt-10">
           {!posts.length && (
             <p className="mb-4 text-gray-600 dark:text-gray-400">
