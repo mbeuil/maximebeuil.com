@@ -1,0 +1,65 @@
+---
+title: Test
+description: test test test test test test test test test test test test test test
+locale: en
+alternate: /blog/teste
+isPublished: false
+publishedDate: '2021-04-20'
+tags: 
+ - react
+image: /images/mb-working.png;
+imageAlt: sketch of maxime beuil working on his computer;
+---
+
+Lorem ipsum dolor sit amet, [MDX](https://mdxjs.com) consectetur adipiscing elit. Fusce [test](/) in dapibus neque. Etiam quis tristique libero. Cras dictum interdum tempor. In id metus eros. Donec eget efficitur risus. Nam feugiat nibh at sodales eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean condimentum ante sed mi volutpat, at hendrerit ligula ornare. Aenean venenatis metus sit amet tortor vehicula, sed blandit ligula volutpat. Vestibulum magna ligula, dignissim a mauris et, efficitur viverra purus. Vestibulum malesuada porta feugiat. Proin a magna lobortis, pharetra tellus in, accumsan sapien. Praesent in fringilla felis. Fusce quis finibus dui. [Mauris](/) ultrices pellentesque est auctor semper.
+
+# Heading
+## Heading
+### Heading
+#### Heading
+##### Heading
+###### Heading
+
+> Why do we fall sir? So that we can learn to pick ourselves up _ Alfred Pennyworth
+
+- list 1
+- list 2
+- list 3
+
+1. ordered list
+2. ordered list
+3. ordered list
+
+```JSX filename="index.js"
+// pages/index.js
+function Homepage({ newestContent, popularContent }) {
+  // Both props are arrays of objects, with post metadata.
+  // I can map through them, and render a React component
+  // for each one.
+}
+export async function getStaticProps() {
+  // This code runs at compile-time!
+  // The stuff I return will be passed as props to
+  // my Homepage component.
+  const newestContent = await getLatestContent({ limit: 20 });
+  const popularContent = await getPopularContent({ limit: 10 });
+  return {
+    <h1>test</h1>
+    <h1>{test}</h1>
+  }
+  const test = () =>  <h1>test</h1>
+  return {
+    props: { newestContent, popularContent },
+  };
+}
+```
+
+_emphasis_
+
+**strong**
+
+***
+
+[MDX](https://mdxjs.com)
+
+![alt de l'image](/images/mb-working.png)

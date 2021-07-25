@@ -8,6 +8,7 @@
     "long_description":"Welcome to my blog ! I love diving into the React world and build exceptional applications. So I'm gonna wright about what I'm learning, about what interests me and, sometimes, merely about what I'm reading. It's gonna be technical, sceptical and a bit drawable."
   },
   "blog": {
+    "empty_page": "No blog posts were found.",
     "meta_description":"Articles to share dev-notes, how-to tutos and about some daily thoughts.",
     "sub_header":"List of blog articles."
   },

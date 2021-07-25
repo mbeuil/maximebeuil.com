@@ -36,8 +36,8 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
         <h2 className="sr-only">{i18n.t('blog.sub_header')}</h2>
         <div className="flex flex-col gap-5 mt-5 sm:mt-10">
           {!posts.length && (
-            <p className="mb-4 text-gray-600 dark:text-gray-400">
-              No posts found.
+            <p className="self-center text-primary sm:text-lg">
+              {i18n.t('blog.empty_page')}
             </p>
           )}
           {posts.map((post) => (
