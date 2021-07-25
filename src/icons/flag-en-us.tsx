@@ -46,20 +46,20 @@ export function FlagEnUs({ className }: IconProps): JSX.Element {
       </clipPath>
       <g clipPath="url(#flag-en-us_svg__SVGID_2_)">
         <path
-          className="flag-en-us_svg__st2"
           d="M473.6 88.3H38.3C17.2 88.3 0 105.4 0 126.6v258.8c0 21.2 17.2 38.4 38.3 38.4h435.3c21.2 0 38.4-17.2 38.4-38.4V126.6c0-21.2-17.2-38.3-38.4-38.3.1 0 .1 0 0 0z"
+          className="flag-en-us_svg__st2"
         />
         <path
-          className="flag-en-us_svg__st0"
           d="M511.5 120.3c-3.1-18.5-19.1-32-37.8-32h-10L300.1 195.4V88.3h-88.3v107.1L48.3 88.3h-10c-18.7 0-34.7 13.5-37.8 32l139.8 91.6H0v88.3h140.3L.5 391.7c3.1 18.5 19.1 32 37.8 32h10l163.5-107.1v107.1h88.3V316.6l163.5 107.1h10c18.7 0 34.7-13.5 37.8-32l-139.8-91.6H512v-88.3H371.7l139.8-91.5z"
+          className="flag-en-us_svg__st0"
         />
         <path
-          className="flag-en-us_svg__st1"
           d="M282.5 88.3h-53v141.2H0v53h229.5v141.2h53V282.5H512v-53H282.5z"
+          className="flag-en-us_svg__st1"
         />
         <path
-          className="flag-en-us_svg__st1"
           d="M24.8 421.2l186.6-121.1H179L9.2 410.3c4.2 4.9 9.6 8.7 15.6 10.9zM346.4 300.1H314l180.7 117.3c5.1-3.3 9.3-7.8 12.3-13.1L346.4 300.1zM4.1 109.5l157.7 102.4h32.4L15.5 95.8c-4.8 3.6-8.8 8.3-11.4 13.7zM332.6 211.9l170-110.4c-4.2-4.9-9.6-8.6-15.7-10.9L300.1 211.9h32.5z"
+          className="flag-en-us_svg__st1"
         />
       </g>
     </svg>
