@@ -16,7 +16,7 @@ This is a project build with :
 Core app made of 3 pages :
 - [x] Homepage
 - [x] Blogpage
-- [ ] Blog/Articlepage
+- [x] Blog/Articlepage
 
 Features :
 - [x] Internationalization
@@ -25,14 +25,15 @@ Features :
 - [x] Footer
 - [x] Container
 - [x] Content Management with Kent C.Dodds MDX-Bundler
-- [ ] Customize mdx css
+- [x] Customize mdx css
+- [ ] Optimize fonts
+- [ ] Accessibility (wave, dev tools a11y ...)
 - [ ] SEO
 
 Others :
 - [x] commit festures commitizen + pre-commit script commitlint & husky
 - [x] Design with jest (half way through)
 - [ ] generate RSS
-- [ ] generate sitemap
 - [ ] generate sitemap
 
 Final:
@@ -44,7 +45,7 @@ Final:
 
 You can see an early draft of the website, when the goal was to create a portfolio :
 
-![](mbDA.png)
+![early website draft](mbDA.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
