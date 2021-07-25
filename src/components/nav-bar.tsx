@@ -18,7 +18,7 @@ function NavBar({ path }: NavBarProps): JSX.Element {
   const i18n = useI18n();
 
   return (
-    <div className="absolute flex flex-row items-center w-full max-w-5xl gap-2 px-5 mt-5 sm:gap-3">
+    <nav className="fixed z-10 flex flex-row items-center w-full max-w-5xl gap-2 px-5 pt-3 pb-3 sm:pt-5 sm:gap-3 backdrop-filter backdrop-blur-xl">
       <NextLink href="/" passHref>
         <button
           aria-label={i18n.t('nav.logo')}
@@ -32,7 +32,7 @@ function NavBar({ path }: NavBarProps): JSX.Element {
       <NextLink href="/blog" passHref>
         <button className="btn-blog">blog</button>
       </NextLink>
-    </div>
+    </nav>
   );
 }
 
