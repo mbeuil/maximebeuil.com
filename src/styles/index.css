@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: optional;
+  src: url(/fonts/FiraCode-VarFont.woff2) format('woff2');
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg-primary: #fff;

@@ -26,12 +26,13 @@ Features :
 - [x] Container
 - [x] Content Management with Kent C.Dodds MDX-Bundler
 - [x] Customize mdx css
-- [ ] Optimize fonts
+- [x] Optimize fonts
+- [ ] smooth scroll when changing page
 - [ ] Accessibility (wave, dev tools a11y ...)
 - [ ] SEO
 
 Others :
-- [x] commit festures commitizen + pre-commit script commitlint & husky
+- [x] commit features commitizen + pre-commit script commitlint & husky
 - [x] Design with jest (half way through)
 - [ ] generate RSS
 - [ ] generate sitemap
