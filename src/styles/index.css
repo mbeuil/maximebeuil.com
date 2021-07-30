@@ -112,7 +112,9 @@
   }
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply bg-primary transition duration-200 ease-in-out;

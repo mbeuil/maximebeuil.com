@@ -17,6 +17,7 @@ Core app made of 3 pages :
 - [x] Homepage
 - [x] Blogpage
 - [x] Blog/Articlepage
+- [ ] page 404
 
 Features :
 - [x] Internationalization
@@ -27,20 +28,26 @@ Features :
 - [x] Content Management with Kent C.Dodds MDX-Bundler
 - [x] Customize mdx css
 - [x] Optimize fonts
-- [ ] smooth scroll when changing page
+- [x] smooth scroll when changing page
 - [ ] Accessibility (wave, dev tools a11y ...)
 - [ ] SEO
 
 Others :
 - [x] commit features commitizen + pre-commit script commitlint & husky
-- [x] Design with jest (half way through)
+- [x] Design with jest
 - [ ] generate RSS
 - [ ] generate sitemap
 
 Final:
 - [ ] host on vercel
 - [ ] handle google bots
+
+Next steps
 - [ ] add analytics
+- [ ] mdx title links
+- [ ] button to copy mdx code example
+- [ ] rework combobox accessibility
+- [ ] add articles read time
 
 ***
 
