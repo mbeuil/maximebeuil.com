@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import Anchor from '@/components/anchor';
 import { Information, Language } from '@/models';
-import { formatDate } from '@/utils';
+import { BREAKPOINT, formatDate } from '@/utils';
 import { useWidth } from '@/hooks';
 
 interface CardTitleProps {
@@ -57,7 +57,7 @@ function BlogCard({
         className="flex flex-row items-center w-full gap-2 mt-2 border-b border-secondary"
         onMouseOver={() => setIsHover(true)}
         onMouseOut={() => setIsHover(false)}>
-        {width >= 950 && (
+        {width >= BREAKPOINT && (
           <span
             aria-hidden
             className={`py-4 font-mono font-thin text-8xl ${
@@ -67,7 +67,7 @@ function BlogCard({
           </span>
         )}
         <div className="flex flex-col w-full py-4">
-          {width >= 950 ? (
+          {width >= BREAKPOINT ? (
             <h3 className="text-2xl font-bold sm:text-3xl text-primary">
               {title}
             </h3>

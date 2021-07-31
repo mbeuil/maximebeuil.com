@@ -1,5 +1,5 @@
 import { Socials } from '@/icons';
-import { email, socialMedia } from '@/utils';
+import { EMAIL, socialMedia } from '@/utils';
 
 interface SideLinkProps {
   children: React.ReactNode;
@@ -36,9 +36,9 @@ function SideFooter(): JSX.Element {
         <SideLink>
           <a
             aria-label="email"
-            href={`mailto:${email}`}
+            href={`mailto:${EMAIL}`}
             className="p-3 font-mono text-xs tracking-widest horizontal-tb hover-link">
-            {email}
+            {EMAIL}
           </a>
         </SideLink>
       </div>

@@ -1,6 +1,6 @@
 import { Socials } from '@/icons';
 import { IconsType } from '@/models';
-import { email, socialMedia } from '@/utils';
+import { EMAIL, socialMedia } from '@/utils';
 
 function MobileFooter(): JSX.Element {
   return (
@@ -18,7 +18,7 @@ function MobileFooter(): JSX.Element {
       ))}
       <a
         aria-label="Email"
-        href={`mailto:${email}`}
+        href={`mailto:${EMAIL}`}
         target="_blank"
         rel="noopener noreferrer">
         <Socials media={IconsType.EMAIL} className="svg-link hover-link" />
