@@ -45,6 +45,12 @@ module.exports = {
       margin: {
         footer: 'calc(100% - 80px)',
       },
+      backgroundImage: {
+        noise: "url('/images/noise.jpg')",
+      },
+      animation: {
+        noise: 'grain 8s steps(10) infinite',
+      },
     },
   },
   variants: {

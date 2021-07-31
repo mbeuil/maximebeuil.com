@@ -34,16 +34,18 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
           placeholder="empty"
         />
         <h2 className="sr-only">{i18n.t('blog.sub_header')}</h2>
-        <div className="flex flex-col gap-5 mt-5 sm:mt-10">
+        <ul className="flex flex-col gap-5 mt-5 sm:mt-10">
           {!posts.length && (
             <p className="self-center text-primary sm:text-lg">
               {i18n.t('blog.empty_page')}
             </p>
           )}
-          {posts.map((post) => (
-            <BlogCard key={post.title} {...post} />
+          {posts.map((post, index) => (
+            <li key={post.title} className="list-none">
+              <BlogCard index={index} key={post.title} {...post} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Container>
   );

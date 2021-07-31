@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg-primary: #fff;
-    --color-bg-secondary: #f3f4f6;
+    --color-bg-secondary: #edf3ff;
     --color-bg-tertiary: #d2d6db;
     --color-bg-quaternary: #f9fafa;
     --button-primary: #555EE2;
@@ -88,7 +88,7 @@
   }
   .light {
     --color-bg-primary: #fff;
-    --color-bg-secondary: #f3f4f6;
+    --color-bg-secondary: #edf3ff;
     --color-bg-tertiary: #08090a0d;
     --color-bg-quaternary: #f9fafa; 
     --button-primary: #555EE2;
@@ -117,7 +117,7 @@ html {
 }
 
 body {
-  @apply bg-primary transition duration-200 ease-in-out selection:bg-button selection:text-white;
+  @apply bg-primary transition duration-200 ease-in-out;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -170,4 +170,26 @@ body {
 
 .separator-x {
   @apply block h-px my-auto bg-separator-secondary;
+}
+
+.shell-noise {
+  @apply after:animate-noise after:opacity-5 after:fixed after:bg-noise after:h-[300%] after:w-[300%] after:left-[-50%] after:top-[-110%] pointer-events-none;
+}
+
+.nav-filter {
+  @apply transition duration-200 fixed h-[64px] sm:h-[72px] -mt-2 w-full max-w-5xl bg-primary overflow-hidden
+  after:bg-noise after:animate-noise after:h-[300%] after:w-[300%] after:left-[-50%] after:top-[-110%] after:absolute after:opacity-5 after:pointer-events-none;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
 }

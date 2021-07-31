@@ -5,13 +5,18 @@ import Anchor from '@/components/anchor';
 import { Information, Language } from '@/models';
 import { formatDate } from '@/utils';
 
+interface BlogCardProps extends Information {
+  index: number;
+}
+
 function BlogCard({
+  index,
   description,
   publishedDate,
   tags,
   title,
   slug,
-}: Information): JSX.Element {
+}: BlogCardProps): JSX.Element {
   const { locale } = useRouter();
 
   const date = formatDate(
@@ -19,18 +24,31 @@ function BlogCard({
     new Date(publishedDate),
   );
 
+  const number = index + 1;
+  const articlesNumber =
+    number < 10 ? `0${number.toString()}` : number.toString();
+
   return (
     <NextLink href={`/blog/${slug}`} passHref>
-      <Anchor className="flex flex-col w-full px-3 py-5 rounded sm:px-8 bg-secondary">
-        <h3 className="text-2xl font-bold text-primary">{title}</h3>
-        <p className="text-primary">{description}</p>
-        <div className="flex w-full mt-4 text-sm font-fira">
-          {tags.map((tag, id) => (
-            <p key={id} className="text-secondary">
-              #{tag}
-            </p>
-          ))}
-          <p className="ml-auto text-secondary">{date}</p>
+      <Anchor className="flex flex-row items-center w-full pb-3 border-b border-secondary">
+        <div className="flex flex-col w-full">
+          <div className="flex items-center">
+            <span
+              aria-hidden
+              className="mr-1 text-2xl font-thin text-blue-1 font-fira">
+              {articlesNumber}.
+            </span>
+            <h3 className="text-2xl font-bold text-primary">{title}</h3>
+          </div>
+          <div className="bottom-0 flex w-full mb-1 text-sm font-fira">
+            {tags.map((tag, id) => (
+              <p key={id} className="text-secondary">
+                #{tag}
+              </p>
+            ))}
+            <p className="ml-auto text-secondary">{date}</p>
+          </div>
+          <p className="text-primary">{description}</p>
         </div>
       </Anchor>
     </NextLink>

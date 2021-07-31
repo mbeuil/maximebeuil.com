@@ -19,7 +19,8 @@ function NavBar({ path }: NavBarProps): JSX.Element {
   const i18n = useI18n();
 
   return (
-    <nav className="fixed z-10 flex flex-row items-center w-full max-w-5xl gap-2 px-5 pt-3 pb-3 sm:pt-5 sm:gap-3 backdrop-filter backdrop-blur-xl">
+    <nav className="fixed z-10 flex flex-row items-center w-full max-w-5xl gap-2 px-5 pt-3 pb-3 sm:pt-5 sm:gap-3">
+      <div className="z-[-1] nav-filter" />
       <NextLink href="/" passHref>
         <Anchor
           aria-label={i18n.t('nav.logo')}

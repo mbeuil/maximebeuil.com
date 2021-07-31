@@ -78,6 +78,7 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
       <a href="#skip" className="skip-nav">
         {i18n.t('a11y.skip_to_content')}
       </a>
+      <div className="pointer-events-none shell-noise z-[-1]" />
       <NavBar
         path={isArticle && meta.alternate ? meta.alternate : router.asPath}
       />
