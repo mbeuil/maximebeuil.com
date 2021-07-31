@@ -84,7 +84,7 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
       />
       <main
         id="skip"
-        className="flex flex-col items-center justify-center w-full max-w-3xl min-h-screen px-5">
+        className="flex flex-col items-center justify-center w-full max-w-3xl px-5 min-h-main">
         {children}
       </main>
       <Footer />

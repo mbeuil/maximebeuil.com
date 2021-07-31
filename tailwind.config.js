@@ -43,6 +43,9 @@ module.exports = {
       },
       stroke: ['hover', 'focus'],
       svgStroke: ['focus'],
+      minHeight: {
+        main: 'calc(100vh - 40px)',
+      },
       margin: {
         footer: 'calc(100% - 80px)',
       },
