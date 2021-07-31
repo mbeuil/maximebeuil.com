@@ -1,5 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const plugin = require('tailwindcss/plugin');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -8,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fira: ['"Fira Code"', 'monospace'],
+        mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
       backgroundColor: {
         primary: 'var(--color-bg-primary)',

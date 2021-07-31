@@ -35,12 +35,12 @@ function BlogCard({
           <div className="flex items-center">
             <span
               aria-hidden
-              className="mr-1 text-2xl font-thin text-blue-1 font-fira">
+              className="mr-1 font-mono text-2xl font-thin text-blue-1">
               {articlesNumber}.
             </span>
             <h3 className="text-2xl font-bold text-primary">{title}</h3>
           </div>
-          <div className="bottom-0 flex w-full mb-1 text-sm font-fira">
+          <div className="bottom-0 flex w-full mb-1 font-mono text-sm">
             {tags.map((tag, id) => (
               <p key={id} className="text-secondary">
                 #{tag}

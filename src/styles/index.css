@@ -141,7 +141,7 @@ body {
 }
 
 .btn-blog {
-  @apply sm:text-lg text-background font-medium px-4 py-1 rounded bg-button hover:bg-hover font-fira;
+  @apply sm:text-lg text-background font-medium px-4 py-1 rounded bg-button hover:bg-hover font-mono;
 }
 
 .hover-link {
@@ -149,7 +149,7 @@ body {
 }
 
 .quote {
-  @apply border-l-2 font-fira sm:text-lg sm:pl-4 border-blue;
+  @apply border-l-2 font-mono sm:text-lg sm:pl-4 border-blue;
 }
 
 .svg-link {

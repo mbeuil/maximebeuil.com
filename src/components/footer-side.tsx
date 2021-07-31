@@ -37,7 +37,7 @@ function SideFooter(): JSX.Element {
           <a
             aria-label="email"
             href={`mailto:${email}`}
-            className="p-3 text-xs tracking-widest horizontal-tb font-fira hover-link">
+            className="p-3 font-mono text-xs tracking-widest horizontal-tb hover-link">
             {email}
           </a>
         </SideLink>

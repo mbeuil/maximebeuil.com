@@ -30,7 +30,7 @@ function ListItem({
   return (
     <li
       ref={listRef}
-      className="h-8 text-base list-decimal list-inside transform sm:text-lg text-blue-1 font-fira"
+      className="h-8 font-mono text-base list-decimal list-inside transform sm:text-lg text-blue-1"
       {...props}>
       <span className="font-sans text-primary">{children}</span>
     </li>

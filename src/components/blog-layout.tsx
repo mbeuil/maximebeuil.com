@@ -26,7 +26,7 @@ function BlogLayout({ code, frontmatter }: BlogPost): JSX.Element {
     <Container customMeta={meta}>
       <article className="w-full pb-16 pt-28 sm:pt-36">
         <BlogTitle text={frontmatter.title} />
-        <div className="flex w-full mt-4 text-sm mb-9 font-fira">
+        <div className="flex w-full mt-4 font-mono text-sm mb-9">
           {frontmatter.tags.map((tag, id) => (
             <p key={id} className="text-secondary">
               #{tag}
