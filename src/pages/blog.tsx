@@ -23,7 +23,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
 
   return (
     <Container customMeta={meta}>
-      <div className="pb-16 pt-28 sm:pt-36">
+      <div className="w-full pb-16 pt-28 sm:pt-36">
         <BlogTitle text="Blog" />
         <Image
           alt={'Sketch of Maxime Beuil working on his computer'}
