@@ -55,6 +55,9 @@ module.exports = {
       animation: {
         noise: 'grain 8s steps(10) infinite',
       },
+      gridTemplateColumns: {
+        title: 'auto 1fr',
+      },
     },
   },
   variants: {
