@@ -30,8 +30,8 @@ Features :
 - [x] Optimize fonts
 - [x] smooth scroll when changing page
 - [x] Accessibility (wave, dev tools a11y ...)
-- [ ] SEO
-- [ ] cache font
+- [x] SEO
+- [x] cache fonts/images
 - [ ] i18n alternate href
 
 
