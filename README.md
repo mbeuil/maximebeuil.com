@@ -29,20 +29,24 @@ Features :
 - [x] Customize mdx css
 - [x] Optimize fonts
 - [x] smooth scroll when changing page
-- [ ] Accessibility (wave, dev tools a11y ...)
+- [x] Accessibility (wave, dev tools a11y ...)
 - [ ] SEO
+- [ ] cache font
+- [ ] i18n alternate href
+
 
 Others :
 - [x] commit features commitizen + pre-commit script commitlint & husky
 - [x] Design with jest
-- [ ] generate RSS
-- [ ] generate sitemap
+- [x] generate sitemap
 
 Final:
-- [ ] host on vercel
 - [ ] handle google bots
+- [ ] host on vercel
 
 Next steps
+- [ ] generate RSS (+ npm run all)
+- [ ] test (cypress, RTL ...)
 - [ ] add analytics
 - [ ] mdx title links
 - [ ] button to copy mdx code example
