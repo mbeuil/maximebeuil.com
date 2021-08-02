@@ -43,6 +43,34 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="canonical" href={`https://maximebeuil.com${path}`} />
+        {/* Localized html tags */}
+        <link
+          rel="alternate"
+          href={`https://maximebeuil.com${
+            isArticle && meta.locale !== Language.EN
+              ? meta.alternate
+              : router.asPath
+          }`}
+          hrefLang={Language.EN}
+        />
+        <link
+          rel="alternate"
+          href={`https://maximebeuil.com/fr${
+            isArticle && meta.locale !== Language.FR
+              ? meta.alternate
+              : router.asPath
+          }`}
+          hrefLang={Language.FR}
+        />
+        <link
+          rel="alternate"
+          href={`https://maximebeuil.com${
+            isArticle && meta.locale !== Language.EN
+              ? meta.alternate
+              : router.asPath
+          }`}
+          hrefLang="x-default"
+        />
         {/* Open Graph tags */}
         <meta property="og:site_name" content="Maxime Beuil" />
         <meta property="og:title" content={meta.title} />

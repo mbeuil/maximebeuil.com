@@ -32,7 +32,7 @@ Features :
 - [x] Accessibility (wave, dev tools a11y ...)
 - [x] SEO
 - [x] cache fonts/images
-- [ ] i18n alternate href
+- [x] i18n alternate href
 
 
 Others :
