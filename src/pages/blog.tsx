@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next';
 import Container from '@/components/container';
 import { Information } from '@/models';
 import { getAllPosts } from '@/utils/mdx';
-import test from '../../public/images/mb-working.png';
+import image from '../../public/images/mb-working.png';
 import BlogCard from '@/components/blog-card';
 import BlogTitle from '@/components/blog-title';
 
@@ -27,7 +27,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
         <BlogTitle text="Blog" />
         <Image
           alt={'Sketch of Maxime Beuil working on his computer'}
-          src={test}
+          src={image}
           width={700}
           height={302}
           priority
