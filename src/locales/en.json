@@ -15,7 +15,8 @@
   "blog": {
     "empty_page": "No blog posts were found.",
     "meta_description":"Articles to share dev-notes, how-to tutos and about some daily thoughts.",
-    "sub_header":"List of blog articles."
+    "sub_header":"List of blog articles.",
+    "image_alt":"Picture of a man coding on his computer."
   },
   "nav": {
     "language_goto":"français",

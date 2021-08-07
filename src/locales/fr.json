@@ -13,9 +13,10 @@
     "long_description":"Bienvenue sur mon blog ! Ici, je vai parler de ReactJS, de Github, d'open source et écrire sur les succés de mon quotidien. Je vai aussi coucher par écrit des réflexions totalement arbitraire sur le monde du dev. Et, qui sait, peut être trouverez vous ça interessant !"
   },
   "blog": {
-    "empty_page": "Aucun article disponile.",
+    "empty_page": "Il n'y a aucun article de disponible.",
     "meta_description":"Articles pour partager mes notes, des tutoriels et de temps en temps des réflexions.",
-    "sub_header":"Liste d'articles de blog."
+    "sub_header":"Liste d'articles de blog.",
+    "image_alt":"Image d'un homme en train de coder sur son ordinateur."
   },
   "nav": {
     "language_goto":"english",

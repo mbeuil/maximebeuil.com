@@ -26,7 +26,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
       <div className="w-full pb-16 pt-28 sm:pt-36">
         <BlogTitle text="Blog" />
         <Image
-          alt={'Sketch of Maxime Beuil working on his computer'}
+          alt={i18n.t('blog.image_alt')}
           src={image}
           width={700}
           height={302}
@@ -36,7 +36,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
         <h2 className="sr-only">{i18n.t('blog.sub_header')}</h2>
         <ul className="flex flex-col gap-5 mt-5 sm:mt-10">
           {!posts.length && (
-            <p className="self-center text-primary sm:text-lg">
+            <p className="self-center text-secondary sm:text-lg">
               {i18n.t('blog.empty_page')}
             </p>
           )}
