@@ -18,3 +18,8 @@ export const socialMedia: { name: IconsType; url: string }[] = [
 ];
 
 export const BREAKPOINT = 950;
+
+export const size = {
+  WIDTH: 728,
+  HEIGHT: 314,
+};

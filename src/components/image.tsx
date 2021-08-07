@@ -1,6 +1,8 @@
 import * as React from 'react';
 import NextImage from 'next/image';
 
+import { size } from '@/utils';
+
 function Image({
   src = '',
   alt,
@@ -9,8 +11,8 @@ function Image({
     <NextImage
       src={src}
       alt={alt}
-      width={700}
-      height={302}
+      width={size.WIDTH}
+      height={size.HEIGHT}
       placeholder="empty"
     />
   );

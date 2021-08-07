@@ -2,9 +2,10 @@ import NextImage from 'next/image';
 import { useI18n } from 'next-localization';
 import { GetStaticProps } from 'next';
 
-import Container from '@/components/container';
 import image from '../../public/images/404.webp';
+import Container from '@/components/container';
 import BlogTitle from '@/components/blog-title';
+import { size } from '@/utils';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const { default: lngDict = {} } = await import(`../locales/${locale}.json`);
@@ -29,8 +30,8 @@ function Custom404(): JSX.Element {
         <NextImage
           alt={i18n.t('custom404.image_alt')}
           src={image}
-          width={700}
-          height={302}
+          width={size.WIDTH}
+          height={size.HEIGHT}
           priority
           placeholder="empty"
         />

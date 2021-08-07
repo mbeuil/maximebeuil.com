@@ -2,12 +2,13 @@ import Image from 'next/image';
 import { useI18n } from 'next-localization';
 import { GetStaticProps } from 'next';
 
+import image from '../../public/images/mb-working.webp';
 import Container from '@/components/container';
-import { Information } from '@/models';
-import { getAllPosts } from '@/utils/mdx';
-import image from '../../public/images/mb-working.png';
 import BlogCard from '@/components/blog-card';
 import BlogTitle from '@/components/blog-title';
+import { Information } from '@/models';
+import { size } from '@/utils';
+import { getAllPosts } from '@/utils/mdx';
 
 interface BlogProps {
   posts: Information[];
@@ -23,13 +24,13 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
 
   return (
     <Container customMeta={meta}>
-      <div className="w-full pb-16 pt-28 sm:pt-36">
+      <div className="w-full py-20">
         <BlogTitle>Blog</BlogTitle>
         <Image
           alt={i18n.t('blog.image_alt')}
           src={image}
-          width={700}
-          height={302}
+          width={size.WIDTH}
+          height={size.HEIGHT}
           priority
           placeholder="empty"
         />
