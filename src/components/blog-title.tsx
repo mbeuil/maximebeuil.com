@@ -1,12 +1,14 @@
 interface BlogTitle {
-  text: string;
+  children: React.ReactNode;
 }
 
-function BlogTitle({ text }: BlogTitle): JSX.Element {
+function BlogTitle({ children }: BlogTitle): JSX.Element {
   return (
-    <div className="grid grid-cols-title">
-      <h1 className="text-4xl font-bold sm:text-6xl text-primary">{text}</h1>
-      <div className="w-full h-px my-auto ml-5 bg-separator-secondary" />
+    <div className="grid mb-5 grid-cols-title sm:mb-2">
+      <h1 className="pr-5 text-4xl font-bold sm:text-6xl text-primary">
+        {children}
+      </h1>
+      <div className="w-full h-px my-auto bg-separator-secondary" />
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function Blog({ posts }: BlogProps): JSX.Element {
   return (
     <Container customMeta={meta}>
       <div className="w-full pb-16 pt-28 sm:pt-36">
-        <BlogTitle text="Blog" />
+        <BlogTitle>Blog</BlogTitle>
         <Image
           alt={i18n.t('blog.image_alt')}
           src={image}

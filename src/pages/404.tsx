@@ -25,7 +25,7 @@ function Custom404(): JSX.Element {
   return (
     <Container customMeta={meta}>
       <div className="w-full">
-        <BlogTitle text={i18n.t('custom404.title')} />
+        <BlogTitle>{i18n.t('custom404.title')}</BlogTitle>
         <NextImage
           alt={i18n.t('custom404.image_alt')}
           src={image}
