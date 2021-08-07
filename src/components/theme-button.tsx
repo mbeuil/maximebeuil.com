@@ -23,26 +23,24 @@ function ThemeButton(): JSX.Element {
   const handleClick = (): void => setTheme(isDark ? Theme.LIGHT : Theme.DARK);
 
   return (
-    <>
-      <button
-        aria-label={i18n.t('nav.theme')}
-        title={i18n.t('nav.theme')}
-        className="relative inline-block w-10 h-10 overflow-hidden leading-10 rounded hover:bg-secondary theme-transition-3"
-        onClick={handleClick}>
-        <Weather
-          theme={Theme.LIGHT}
-          className={`text-primary h-6 w-6 m-2 relative block transition transform duration-300 ${
-            isDark ? '-translate-y-10' : ''
-          }`}
-        />
-        <Weather
-          theme={Theme.DARK}
-          className={`text-primary h-6 w-6 m-2 mt-4 relative block transition transform duration-300 ${
-            isDark ? '-translate-y-10' : ''
-          }`}
-        />
-      </button>
-    </>
+    <button
+      aria-label={i18n.t('nav.theme')}
+      title={i18n.t('nav.theme')}
+      className="relative inline-block w-10 h-10 overflow-hidden leading-10 rounded hover:bg-secondary theme-transition-3"
+      onClick={handleClick}>
+      <Weather
+        theme={Theme.DARK}
+        className={`text-primary h-6 w-6 m-2 relative block transition transform duration-300 ${
+          isDark ? '-translate-y-10' : ''
+        }`}
+      />
+      <Weather
+        theme={Theme.LIGHT}
+        className={`text-primary h-6 w-6 m-2 mt-4  relative block transition transform duration-300 ${
+          isDark ? '-translate-y-10' : ''
+        }`}
+      />
+    </button>
   );
 }
 
