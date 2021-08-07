@@ -1,4 +1,9 @@
 {
+  "custom404": {
+    "title":"Are you lost ?",
+    "text":"This page sounds like an empty place, looks like an empty and even smells like an empty place ... this page is probably an empty place.",
+    "image_alt":"Picture of a man looking at a 404 sign."
+  },
   "a11y": {
     "skip_to_content":"Skip to content"
   },

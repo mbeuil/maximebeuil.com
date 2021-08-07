@@ -17,7 +17,7 @@ Core app made of 3 pages :
 - [x] Homepage
 - [x] Blogpage
 - [x] Blog/Articlepage
-- [ ] page 404
+- [x] page 404
 
 Features :
 - [x] Internationalization
@@ -39,6 +39,7 @@ Others :
 - [x] commit features commitizen + pre-commit script commitlint & husky
 - [x] Design with jest
 - [x] generate sitemap
+- [ ] convert all pictures to webp format
 
 Final:
 - [ ] handle google bots

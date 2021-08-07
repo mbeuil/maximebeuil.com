@@ -13,6 +13,7 @@ const prettier = require('prettier');
     'src/pages/*.tsx',
     '!src/pages/_*.tsx',
     '!src/pages/api',
+    '!src/pages/404.tsx',
   ]);
   const posts = await globby(['posts/*.mdx']);
 
