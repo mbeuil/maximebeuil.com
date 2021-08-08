@@ -10,7 +10,7 @@
   "home": {
     "greetings":"Salut, moi c'est",
     "short_description":"Je suis développeur",
-    "long_description":"Bienvenue sur mon blog ! Ici, je vai parler de ReactJS, de Github, d'open source et écrire sur les succés de mon quotidien. Je vai aussi coucher par écrit des réflexions totalement arbitraire sur le monde du dev. Et, qui sait, peut être trouverez vous ça interessant !"
+    "long_description":"Bienvenue sur mon blog ! Ici, je vais parler de ReactJS, de Github, d'open source et écrire sur les succés de mon quotidien. Je vais aussi coucher par écrit des réflexions totalement arbitraires sur le monde du dev. Et, qui sait, peut-être trouverez-vous ça intéressant !"
   },
   "blog": {
     "empty_page": "Il n'y a aucun article de disponible.",
@@ -23,7 +23,7 @@
     "language_list":"Liste des langues",
     "language_selected": "Choix de la langue",
     "logo": "Accueil",
-    "theme": "Choix du theme"
+    "theme": "Choix du thème"
   },
   "meta": {
     "title":"Maxime Beuil",
