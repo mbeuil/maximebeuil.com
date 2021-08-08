@@ -1,12 +1,14 @@
 import * as React from 'react';
 
+import { BREAKPOINT } from '@/utils';
+
 const getWidth = (): number =>
   window.innerWidth ||
   document.documentElement.clientWidth ||
   document.body.clientWidth;
 
 export const useWidth = (): { width: number } => {
-  const [width, setWidth] = React.useState(0);
+  const [width, setWidth] = React.useState(BREAKPOINT);
 
   React.useEffect(() => {
     let timeoutId: NodeJS.Timeout;
