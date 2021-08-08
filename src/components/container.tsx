@@ -97,7 +97,7 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
         )}
         {/* Twitter card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@maximebeuil" />
+        <meta name="twitter:creator" content="@Crazy_Fiz" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
