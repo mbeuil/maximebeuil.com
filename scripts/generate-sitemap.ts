@@ -51,7 +51,8 @@ const prettier = require('prettier');
     const alternateLanguage = data.locale === 'fr' ? '' : '/fr';
     const alternatUrl = `https://maximebeuil.com${alternateLanguage}${data.alternate}`;
 
-    return `
+    if (data.isPublished)
+      return `
         <url>
             <loc>${url}</loc>
             <xhtml:link rel="alternate" hreflang="${data.locale}" href="${url}" />
@@ -62,7 +63,7 @@ const prettier = require('prettier');
 
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     ${mapPages.join('')}
     ${mapPosts.join('')}
     </urlset>
