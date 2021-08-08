@@ -23,7 +23,8 @@
     "language_list":"Liste des langues",
     "language_selected": "Choix de la langue",
     "logo": "Accueil",
-    "theme": "Choix du thème"
+    "theme_dark": "Activer le mode lumineux",
+    "theme_light": "Activer le mode sombre"
   },
   "meta": {
     "title":"Maxime Beuil",

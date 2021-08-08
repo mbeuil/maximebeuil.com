@@ -13,7 +13,6 @@ export function FlagEnUs({ className }: IconProps): JSX.Element {
       width="1em"
       height="1em"
       className={className}>
-      <title>Mixed US / UK flags icon</title>
       <style>
         {
           '.flag-en-us_svg__st0{fill:#f5f5f5}.flag-en-us_svg__st1{fill:#ff4b55}.flag-en-us_svg__st2{fill:#41479b}'

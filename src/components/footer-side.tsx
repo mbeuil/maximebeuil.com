@@ -24,6 +24,7 @@ function SideFooter(): JSX.Element {
               <a
                 href={url}
                 aria-label={name}
+                title={name}
                 target="_blank"
                 rel="noopener noreferrer">
                 <Socials media={name} className="svg-link hover-link" />

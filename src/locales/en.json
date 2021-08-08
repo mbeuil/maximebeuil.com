@@ -23,7 +23,8 @@
     "language_list":"Language options list",
     "language_selected": "Language button",
     "logo": "Home page",
-    "theme": "Theme button"
+    "theme_dark": "Activate light mode",
+    "theme_light": "Activate dark mode"
   },
   "meta": {
     "title":"Maxime Beuil",

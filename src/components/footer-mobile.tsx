@@ -10,6 +10,7 @@ function MobileFooter(): JSX.Element {
         <a
           key={index}
           aria-label={name}
+          title={name}
           href={url}
           target="_blank"
           rel="noopener noreferrer">
@@ -18,6 +19,7 @@ function MobileFooter(): JSX.Element {
       ))}
       <a
         aria-label="Email"
+        title="Email"
         href={`mailto:${EMAIL}`}
         target="_blank"
         rel="noopener noreferrer">

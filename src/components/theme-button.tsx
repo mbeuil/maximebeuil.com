@@ -24,8 +24,12 @@ function ThemeButton(): JSX.Element {
 
   return (
     <button
-      aria-label={i18n.t('nav.theme')}
-      title={i18n.t('nav.theme')}
+      aria-label={i18n.t(
+        theme === Theme.DARK ? 'nav.theme_dark' : 'nav.theme_light',
+      )}
+      title={i18n.t(
+        theme === Theme.DARK ? 'nav.theme_dark' : 'nav.theme_light',
+      )}
       className="relative inline-block w-10 h-10 overflow-hidden leading-10 rounded hover:bg-secondary theme-transition-3"
       onClick={handleClick}>
       <Weather

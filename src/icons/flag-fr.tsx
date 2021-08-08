@@ -8,7 +8,6 @@ export function FlagFr({ className }: IconProps): JSX.Element {
       width="1em"
       height="1em"
       className={className}>
-      <title>French flag icon</title>
       <path
         d="M38.345 88.273C17.167 88.273 0 105.44 0 126.618v258.759c0 21.177 17.167 38.345 38.345 38.345h132.322V88.273H38.345z"
         fill="#41479b"

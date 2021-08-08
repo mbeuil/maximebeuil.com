@@ -14,7 +14,6 @@ export function Chevron({ className }: IconProps): JSX.Element {
       clipRule="evenodd"
       strokeMiterlimit="1.5"
       className={className}>
-      <title>Chevron icon</title>
       <path
         d="M0.495,2.506L5.009,7.038L9.529,2.511"
         fill="none"
