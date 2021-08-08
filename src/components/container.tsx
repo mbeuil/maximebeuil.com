@@ -103,7 +103,7 @@ function Container({ children, customMeta }: ContainerProps): JSX.Element {
         <meta name="twitter:image" content={meta.image} />
         <meta name="twitter:image:alt" content={meta.imageAlt} />
       </Head>
-      <a href="#skip" className="skip-nav">
+      <a href="#skip" className="sr-only">
         {i18n.t('a11y.skip_to_content')}
       </a>
       <div className="pointer-events-none shell-noise z-[-1]" />
